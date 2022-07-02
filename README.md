@@ -1,21 +1,11 @@
-# Express - Nodejs
+# Mohammad Shehadeh
 
-###### install npm
+###### install dependencies
 ```
 > npm install
 ```
 
-###### To start server:
+###### To development server:
 ```
-> npm run start
-```
-
-###### To build js
-```
-> npm run build:js
-```
-
-###### To build css
-```
-> npm run build:css
+> npm run dev
 ```
