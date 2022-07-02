@@ -1,0 +1,134 @@
+.related-posts {
+	padding: 29px 0 29px 16px;
+	background: $dark-red;
+}
+
+.related-posts__title {
+	margin-bottom: 31px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	color: $white;
+}
+
+.related-posts__grid {
+	display: flex;
+	gap: 30px 0;
+	padding-left: 4px;
+	// swipe func can be added here
+	overflow-x: hidden;
+}
+
+.related-posts__item-img {
+	object-fit: cover;
+	width: 100%;
+	height: 167px;
+}
+
+.related-posts__item-preview {
+	position: relative;
+
+	&::after {
+		content: attr(data-label);
+		display: block;
+		font-weight: 700;
+		font-size: 10px;
+		line-height: 12px;
+		background: $anzac;
+		border-radius: 2px;
+		position: absolute;
+		bottom: 16px;
+		left: -4px;
+		color: $white;
+		font-weight: 700;
+		font-size: 10px;
+		line-height: 12px;
+		padding: 4px 6px;
+	}
+}
+
+.related-posts__item {
+	background-color: $white;
+	max-width: 255px;
+	min-width: 255px;
+	margin-right: 30px;
+}
+
+.related-posts__item-content {
+	padding: 16px 16px 24px;
+}
+
+.related-posts__item-title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: 8px;
+	color: $black;
+}
+
+.related-posts__item-text {
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 22px;
+	color: $gray-44;
+}
+
+.slider__buttons {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 51px;
+	align-items: center;
+}
+
+.slider__button {
+	align-items: center;
+	background-color: transparent;
+	border-radius: 50%;
+	border: 3px solid $white;
+	display: flex;
+	height: 48px;
+	justify-content: center;
+	opacity: 0.5;
+	width: 48px;
+	margin-right: 16px;
+
+	&.disabled {
+		opacity: 0.1;
+		pointer-events: none;
+	}
+}
+
+.slider__dots {
+	display: flex;
+}
+
+.slider__dot {
+	padding: 0 8px;
+
+	&::before {
+		border-radius: 50%;
+		content: '';
+		display: block;
+		width: 8px;
+		height: 8px;
+		background: $white;
+		opacity: 0.5;
+	}
+
+	&.active {
+		&::before {
+			border: 2px solid $very-light-gray;
+			background-color: transparent;
+			opacity: 1;
+			width: 8px;
+			height: 8px;
+		}
+	}
+}
+
+@media #{$media-min-mobile} {
+	.related-posts__wrapper {
+		max-width: 1109px;
+		margin: 0 auto;
+	}
+}

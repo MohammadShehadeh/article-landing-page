@@ -1,0 +1,7 @@
+// breakpoints
+$breakpoint-mobile: 580px;
+$breakpoint-tablet-landscape: 1024px;
+
+// media query min width
+$media-min-mobile: 'all and (min-width: #{$breakpoint-mobile})';
+$media-min-tablet-landscape: 'all and (min-width: #{$breakpoint-tablet-landscape})';

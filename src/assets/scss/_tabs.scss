@@ -1,0 +1,153 @@
+.tabs {
+	font-family: $font-montserrat;
+	background-color: $white;
+}
+
+.tabs__panel {
+	display: flex;
+	border-bottom: 2px solid $red;
+}
+
+.tabs__label {
+	color: $white;
+	padding: 16px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	text-transform: uppercase;
+	color: $gray-80;
+	border: 1px solid $gray-94;
+	cursor: pointer;
+
+	&.tabs__label--active {
+		color: $white;
+		border: none;
+		background-color: $red;
+	}
+}
+
+.tabs__groups {
+	display: none;
+
+	&--active {
+		display: block;
+	}
+}
+
+.tab__group {
+	display: flex;
+	border: 1px solid $gray-94;
+	border-top: none;
+	padding: 16px;
+	position: relative;
+
+	&::after {
+		color: $white;
+		background-color: $anzac;
+		padding: 4px;
+	}
+}
+
+.tab__group__image {
+	width: 80px;
+	height: 80px;
+}
+
+.tab__group__info {
+	margin-left: 16px;
+}
+
+.tab__group__title {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 22px;
+	color: $gray-80;
+	margin-bottom: 4px;
+}
+
+.tab__group__text {
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	color: $gray-44;
+	display: -webkit-box;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 22px;
+	overflow: hidden;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.tab__group__text-author {
+	text-decoration: underline;
+	color: inherit;
+}
+
+.about {
+	font-family: $font-montserrat;
+}
+
+.about__wrapper {
+	background: $very-light-gray;
+	border: 4px solid $gray-94;
+	padding: 16px 24px;
+	color: $gray-80;
+	margin: 26px 0 32px;
+}
+
+.about-title {
+	margin-bottom: 6px;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+.about-text {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.tags {
+	margin-bottom: 108px;
+	font-family: $font-montserrat;
+}
+
+.tag-title {
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
+	color: $gray-80;
+	margin-bottom: 18px;
+}
+
+.tags__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.tag-label {
+	border: 2px solid $gray-85;
+	border-radius: 30px;
+	padding: 8px 16px;
+}
+
+@for $i from 1 through 3 {
+	.tabs__groups:nth-child(#{$i}) {
+		.tab__group::after {
+			content: '#{$i}';
+			position: absolute;
+			left: 24px;
+			top: 24px;
+		}
+	}
+}
+
+@media #{$media-min-tablet-landscape} {
+	.tabs__label {
+		text-align: center;
+		flex-grow: 1;
+	}
+}

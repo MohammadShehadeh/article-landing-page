@@ -1,0 +1,13 @@
+.follow-us {
+	font-family: $font-montserrat;
+}
+
+.follow-us-title {
+	margin-top: 41px;
+}
+
+.follow-us-icons {
+	display: grid;
+	gap: 16px;
+	grid-template-columns: repeat(4, 48px);
+}

@@ -1,0 +1,68 @@
+@import 'shared/index';
+@import 'footer';
+@import 'header';
+@import 'hero';
+@import 'article';
+@import 'related-posts';
+@import 'tabs';
+@import 'about-author';
+@import 'newsletter';
+@import 'follow-us';
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: $font-montserrat;
+}
+
+button {
+	all: unset;
+}
+
+input {
+	all: unset;
+}
+
+img {
+	width: 100%;
+}
+
+.container {
+	padding: 0 16px;
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+[desktop] {
+	display: none;
+}
+
+@media #{$media-min-mobile} {
+	.container {
+		margin: 0 auto;
+		max-width: 1141px;
+	}
+}
+
+@media #{$media-min-tablet-landscape} {
+	body {
+		background-color: $very-light-gray;
+	}
+
+	[mobile] {
+		display: none;
+	}
+
+	[desktop] {
+		display: block;
+	}
+}
