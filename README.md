@@ -1,6 +1,6 @@
 # Mohammad Shehadeh
 
-###### install dependencies
+###### Install dependencies
 ```
 > npm install
 ```
