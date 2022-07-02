@@ -44,7 +44,6 @@ const removeActiveDots = () => {
 	const dots = Array.from(sliderDots.children);
 	dots.forEach((dot) => {
 		dot.classList.remove('active');
-		console.log('dot: ', dot);
 	});
 };
 
