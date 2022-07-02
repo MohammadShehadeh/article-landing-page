@@ -5,7 +5,7 @@
 > npm install
 ```
 
-###### To development server:
+###### To start development:
 ```
 > npm run dev
 ```
