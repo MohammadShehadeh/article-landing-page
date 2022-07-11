@@ -6,13 +6,14 @@ module.exports = {
 		script: './src/assets/js/script.js',
 	},
 	output: {
-		path: path.resolve(__dirname, './dist/js/'),
+		path: path.resolve(__dirname, './public/dist/js/'),
 		filename: '[name].js',
 	},
 	plugins: [
 		new CopyPlugin({
 			patterns: [
-				{ from: 'src/assets/img', to: path.resolve(__dirname, './dist/img/') },
+				{ from: 'src/assets/img', to: path.resolve(__dirname, './public/dist/img/') },
+				{ from: 'src/views', to: path.resolve(__dirname, './public/') },
 			],
 		}),
 	],
