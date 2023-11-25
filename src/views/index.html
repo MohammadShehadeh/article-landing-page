@@ -1,543 +1,699 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-        <meta http-equiv="Content-Language" content="en_US" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link rel="stylesheet" href="./dist/css/main.css" />
-        <meta charset="UTF-8" />
-        <link rel="shortcut icon" href="" />
-        <link rel="canonical" href="" />
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
-        <meta name="author" content="" />
-        <meta property="og:title" content="" />
-        <meta property="og:site_name" content="" />
-        <meta property="og:type" content="" />
-        <meta property="og:url" content="" />
-        <meta property="og:image" content="" name="image" />
-        <meta property="og:description" content="" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="" />
-        <meta name="twitter:creator" content="" />
-        <meta name="twitter:title" content="" />
-        <meta name="twitter:description" content="" />
-        <meta name="twitter:image" content="" />
-	</head>
-	<body>
-		<main>
-            <header class="header">
-                <div class="container">
-                    <div class="header__wrapper">
-                        <div class="header__left">
-                            <div class="header__hamburger" data-hamburger mobile>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                                    <path d="M2.75 15.5833C2.75 16.0896 3.16041 16.5 3.66667 16.5H18.3333C18.8396 16.5 19.25 16.0896 19.25 15.5833C19.25 15.0771 18.8396 14.6667 18.3333 14.6667H3.66667C3.16041 14.6667 2.75 15.0771 2.75 15.5833ZM2.75 11C2.75 11.5063 3.16041 11.9167 3.66667 11.9167H18.3333C18.8396 11.9167 19.25 11.5063 19.25 11C19.25 10.4937 18.8396 10.0833 18.3333 10.0833H3.66667C3.16041 10.0833 2.75 10.4937 2.75 11ZM3.66667 5.5C3.16041 5.5 2.75 5.91041 2.75 6.41667C2.75 6.92293 3.16041 7.33333 3.66667 7.33333H18.3333C18.8396 7.33333 19.25 6.92293 19.25 6.41667C19.25 5.91041 18.8396 5.5 18.3333 5.5H3.66667Z" fill="white"/>
-                                </svg>
-                            </div>
-                            <div class="header__translate">
-                                <span class="header__translate--en">En</span>
-                                <span class="header__translate--ar">ع</span>
-                            </div>
-                        </div>
-                        <div class="header__logo">
-                            <img loading="lazy" class="header__img" src="./dist/img/logo.svg" alt="Atypon Logo">
-                        </div>
-                        <div class="header__search">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
-                                <path d="M12.2083 10.8333H11.4796L11.2275 10.5813C12.1258 9.54083 12.6667 8.18875 12.6667 6.70833C12.6667 3.4175 9.99917 0.75 6.70833 0.75C3.4175 0.75 0.75 3.4175 0.75 6.70833C0.75 9.99917 3.4175 12.6667 6.70833 12.6667C8.18875 12.6667 9.54083 12.1258 10.5813 11.2321L10.8333 11.4842V12.2083L15.4167 16.7825L16.7825 15.4167L12.2083 10.8333ZM6.70833 10.8333C4.43042 10.8333 2.58333 8.98625 2.58333 6.70833C2.58333 4.43042 4.43042 2.58333 6.70833 2.58333C8.98625 2.58333 10.8333 4.43042 10.8333 6.70833C10.8333 8.98625 8.98625 10.8333 6.70833 10.8333Z" fill="#FAFAFA"/>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Language" content="en_US" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Mohammad Shehadeh</title>
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="" />
+    <link rel="canonical" href="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" name="image" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:creator" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="" />
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__left">
+                        <div class="header__hamburger" data-hamburger mobile>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none">
+                                <path
+                                    d="M2.75 15.5833C2.75 16.0896 3.16041 16.5 3.66667 16.5H18.3333C18.8396 16.5 19.25 16.0896 19.25 15.5833C19.25 15.0771 18.8396 14.6667 18.3333 14.6667H3.66667C3.16041 14.6667 2.75 15.0771 2.75 15.5833ZM2.75 11C2.75 11.5063 3.16041 11.9167 3.66667 11.9167H18.3333C18.8396 11.9167 19.25 11.5063 19.25 11C19.25 10.4937 18.8396 10.0833 18.3333 10.0833H3.66667C3.16041 10.0833 2.75 10.4937 2.75 11ZM3.66667 5.5C3.16041 5.5 2.75 5.91041 2.75 6.41667C2.75 6.92293 3.16041 7.33333 3.66667 7.33333H18.3333C18.8396 7.33333 19.25 6.92293 19.25 6.41667C19.25 5.91041 18.8396 5.5 18.3333 5.5H3.66667Z"
+                                    fill="white" />
                             </svg>
                         </div>
-                    </div>
-                    <nav class="header__nav" data-nav>
-                        <div class="header__nav-close" data-close>X</div>
-                        <div class="header__nav-links">
-                            <a href="#" class="header__nav-link">Healthy Lifestyle</a>
-                            <a href="#" class="header__nav-link">Chronic diseases</a>
-                            <a href="#" class="header__nav-link">Women’s health</a>
-                            <a href="#" class="header__nav-link">mental health</a>
-                            <a href="#" class="header__nav-link">more</a>
-                            <a href="#" class="header__nav-link">Health Education distations</a>
+                        <div class="header__translate">
+                            <span class="header__translate--en">En</span>
+                            <span class="header__translate--ar">ع</span>
                         </div>
-                    </nav>
+                    </div>
+                    <div class="header__logo">
+                        MOHAMMAD SHEHADEH
+                    </div>
+                    <div class="header__search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                            <path
+                                d="M12.2083 10.8333H11.4796L11.2275 10.5813C12.1258 9.54083 12.6667 8.18875 12.6667 6.70833C12.6667 3.4175 9.99917 0.75 6.70833 0.75C3.4175 0.75 0.75 3.4175 0.75 6.70833C0.75 9.99917 3.4175 12.6667 6.70833 12.6667C8.18875 12.6667 9.54083 12.1258 10.5813 11.2321L10.8333 11.4842V12.2083L15.4167 16.7825L16.7825 15.4167L12.2083 10.8333ZM6.70833 10.8333C4.43042 10.8333 2.58333 8.98625 2.58333 6.70833C2.58333 4.43042 4.43042 2.58333 6.70833 2.58333C8.98625 2.58333 10.8333 4.43042 10.8333 6.70833C10.8333 8.98625 8.98625 10.8333 6.70833 10.8333Z"
+                                fill="#FAFAFA" />
+                        </svg>
+                    </div>
                 </div>
-            </header>
-            <section class="hero">
-                <div class="hero__preview">
-                    <div class="hero__img" style="background-image: url('./dist/img/image 2.png')">
-                        <div class="hero__wrapper container">
+                <nav class="header__nav" data-nav>
+                    <div class="header__nav-close" data-close>X</div>
+                    <div class="header__nav-links">
+                        <a href="#" class="header__nav-link">Healthy Lifestyle</a>
+                        <a href="#" class="header__nav-link">Chronic diseases</a>
+                        <a href="#" class="header__nav-link">Women’s health</a>
+                        <a href="#" class="header__nav-link">mental health</a>
+                        <a href="#" class="header__nav-link">more</a>
+                        <a href="#" class="header__nav-link">Health Education distations</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="hero">
+            <div class="hero__preview">
+                <div class="hero__img" style="background-image: url('./public/img/image 2.png')">
+                    <div class="container">
+                        <div class="hero__wrapper">
                             <span class="hero__eyebrow">Healthy lifestyle</span>
                             <h1 class="hero__headline">Could walking help <br> lower cancer risk?</h1>
                         </div>
                     </div>
                 </div>
-            </section>
-            <article class="article">
-                <section class="author" mobile>
-                    <div class="author__wrapper">
-                        <div class="author-info">
-                            <div class="author__img" role="img"></div>
-                            <div class="author__text">
-                                <div class="author__name">Mohammad Shehadeh</div>
-                                <div class="author__title">Team Lead</div>
-                            </div>
-                        </div>
-                        <div class="article__details">
-                            <div class="article__detail article__detail--publish-date">
-                                <svg class="article__detail-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" fill="#FFFFFF">
-                                    <path d="M12.3333 2.00002H11.6666V0.666687H10.3333V2.00002H3.66659V0.666687H2.33325V2.00002H1.66659C0.933252 2.00002 0.333252 2.60002 0.333252 3.33335V14C0.333252 14.7334 0.933252 15.3334 1.66659 15.3334H12.3333C13.0666 15.3334 13.6666 14.7334 13.6666 14V3.33335C13.6666 2.60002 13.0666 2.00002 12.3333 2.00002ZM12.3333 14H1.66659V5.33335H12.3333V14Z" fill="white"/>
-                                </svg>
-                                Aug. 11, 2202, 9:00 AM
-                            </div>
-                            <div class="article__detail article__detail--shares">
-                                <svg class="article__detail-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="#FFFFFF">
-                                    <path d="M9.55564 8.48795C9.10527 8.48795 8.69934 8.66566 8.39119 8.95181L4.16897 6.4488C4.20156 6.31325 4.2223 6.17169 4.2223 6.02711C4.2223 5.88253 4.20156 5.74096 4.16897 5.60542L8.34675 3.12651C8.66378 3.42771 9.08749 3.61446 9.55564 3.61446C10.5364 3.61446 11.3334 2.80422 11.3334 1.80723C11.3334 0.810241 10.5364 2.87251e-09 9.55564 2.87251e-09C8.5749 2.87251e-09 7.77786 0.810241 7.77786 1.80723C7.77786 1.95181 7.7986 2.09337 7.83119 2.22892L3.65341 4.70783C3.33638 4.40663 2.91267 4.21988 2.44453 4.21988C1.46379 4.21988 0.666748 5.03012 0.666748 6.02711C0.666748 7.0241 1.46379 7.83434 2.44453 7.83434C2.91267 7.83434 3.33638 7.64759 3.65341 7.34639L7.87564 9.8494C7.84601 9.9759 7.82823 10.1084 7.82823 10.244C7.82823 11.2139 8.60156 12 9.55564 12C10.5097 12 11.283 11.2139 11.283 10.244C11.283 9.2741 10.5097 8.48795 9.55564 8.48795Z" fill="white"/>
-                                </svg>
-                                1K Shares
-                            </div>
-                            <div class="article__detail article__detail--views">
-                                <svg class="article__detail-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="#FFFFFF">
-                                    <path d="M6 0C3.27273 0 0.943636 1.65867 0 4C0.943636 6.34133 3.27273 8 6 8C8.73 8 11.0564 6.34133 12 4C11.0564 1.65867 8.73 0 6 0ZM6 6.66667C4.49455 6.66667 3.27273 5.472 3.27273 4C3.27273 2.528 4.49455 1.33333 6 1.33333C7.50545 1.33333 8.72727 2.528 8.72727 4C8.72727 5.472 7.50545 6.66667 6 6.66667ZM6 2.4C5.09727 2.4 4.36364 3.11733 4.36364 4C4.36364 4.88267 5.09727 5.6 6 5.6C6.90273 5.6 7.63636 4.88267 7.63636 4C7.63636 3.11733 6.90273 2.4 6 2.4Z" fill="white"/>
-                                </svg>
-                                5K Views
-                            </div>
+            </div>
+        </section>
+        <article class="article">
+            <section class="author" mobile>
+                <div class="author__wrapper">
+                    <div class="author-info">
+                        <div class="author__img" role="img"></div>
+                        <div class="author__text">
+                            <div class="author__name">Mohammad Shehadeh</div>
+                            <div class="author__title">Team Lead</div>
                         </div>
                     </div>
-                </section>
-                <section class="article__wrapper">
-                    <!-- Not sure but could be done better -->
-                    <div class="left-rail" desktop>
-                        <div class="left-rail__wrapper">
-                            <p class="image-credit" desktop><strong>Cover Image:</strong> A stripy monarch caterpillar (Danaus plexippus) gorges on a
-                                butterfly milkweed. Photo by: Sarah Mac Farland
-                                <strong>Photo by:</strong> Sarah Mac Farland
-                            </p>
-                            <div class="left-rail__social">
-                                <div class="left-rail__shares"><span class="bold">1k</span>shares</div>
-                                <div class="left-rail__icons">
-                                    <div class="left-rail__icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="#3B5998">
-                                            <path d="M32.8966 14H15.1034C14.8108 14 14.5301 14.1163 14.3232 14.3232C14.1163 14.5301 14 14.8108 14 15.1034V32.8966C14 33.1892 14.1163 33.4699 14.3232 33.6768C14.5301 33.8837 14.8108 34 15.1034 34H24.6897V26.2655H22.0862V23.2379H24.6897V21.0103C24.6897 18.4276 26.269 17.0207 28.5724 17.0207C29.3486 17.019 30.1244 17.0581 30.8966 17.1379V19.8379H29.3103C28.0552 19.8379 27.8103 20.431 27.8103 21.3069V23.2345H30.8103L30.4207 26.2621H27.7931V34H32.8966C33.1892 34 33.4699 33.8837 33.6768 33.6768C33.8837 33.4699 34 33.1892 34 32.8966V15.1034C34 14.8108 33.8837 14.5301 33.6768 14.3232C33.4699 14.1163 33.1892 14 32.8966 14V14Z" fill="#3B5998"/>
-                                        </svg>
-                                    </div>
-                                    <div class="left-rail__icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="#1DA1F2">
-                                            <path d="M32 19.4444C32 19.6667 32 19.8889 32 20.1111C32 21.6667 31.6 23.2222 31.2 24.5556C30.8 25.8889 30 27.4444 29 28.7778C28 30.1111 26.8 31 25.2 31.8889C23.6 32.7778 22 33 20.2 33C18 33 16 32.3333 14 31C14.4 31 14.6 31 15 31C17 31 18.6 30.3333 20.2 29C19.2 29 18.4 28.5556 17.8 28.1111C17.2 27.6667 16.6 26.7778 16.4 25.8889C16.6 25.8889 16.8 25.8889 17.2 25.8889C17.6 25.8889 18 25.8889 18.2 25.6667C17.2 25.6667 16.4 25 15.8 24.3333C15.2 23.6667 14.8 22.5556 14.8 21.4444C15.4 21.6667 16 21.8889 16.6 21.8889C15.4 21 14.8 19.6667 14.8 18.1111C14.8 17.2222 15 16.5556 15.4 15.8889C16.4 17.2222 17.6 18.3333 19.2 19.2222C20.8 20.1111 22.2 20.5556 24 20.5556C24 20.1111 24 19.8889 24 19.4444C24 18.1111 24.4 17.2222 25.2 16.3333C26 15.4444 26.8 15 27.8 15C29 15 30 15.4444 30.8 16.3333C31.8 16.1111 32.6 15.6667 33.4 15.2222C33.2 16.3333 32.6 17.2222 31.6 17.8889C32.4 17.6667 33.2 17.4444 34 17.2222C33.4 18.1111 32.8 18.7778 32 19.4444Z" fill="#1DA1F2"/>
-                                        </svg>
-                                    </div>
-                                    <div class="left-rail__icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="#EB3223">
-                                            <path d="M34.5375 18.5032C34.2875 17.5226 33.5375 16.7484 32.5875 16.4774C30.875 16 24 16 24 16C24 16 17.125 16 15.4 16.4774C14.45 16.7355 13.7125 17.5097 13.45 18.5032C13 20.2839 13 24 13 24C13 24 13 27.7161 13.4625 29.4968C13.7125 30.4774 14.4625 31.2516 15.4125 31.5226C17.125 32 24 32 24 32C24 32 30.875 32 32.6 31.5226C33.55 31.2645 34.2875 30.4903 34.55 29.4968C35 27.7161 35 24 35 24C35 24 35 20.2839 34.5375 18.5032ZM21.75 27.3806V20.6194L27.5 24L21.75 27.3806Z" fill="#EB3223"/>
-                                        </svg>
-                                    </div>
-                                    <div class="left-rail__icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="#007BB5">
-                                            <path d="M18.8 16.3894C18.8 16.9867 18.6 17.5841 18 18.1814C17.4 18.7788 17 18.7788 16.4 18.7788C15.8 18.7788 15.2 18.5796 14.8 18.1814C14.4 17.7832 14 16.9867 14 16.3894C14 15.792 14.2 15.1947 14.8 14.5973C15.4 14 15.8 14 16.4 14C17 14 17.6 14.1991 18.2 14.7965C18.8 15.3938 18.8 15.792 18.8 16.3894ZM18.8 20.7699V33.3142C18.8 33.5133 18.8 33.5133 18.6 33.7124C18.4 33.9115 18.4 33.9115 18.2 33.9115H14.6C14.4 33.9115 14.4 33.9115 14.2 33.7124C14 33.5133 14.2 33.5133 14.2 33.3142V20.7699C14.2 20.5708 14.2 20.5708 14.4 20.3717C14.6 20.1726 14.6 20.1726 14.8 20.1726H18.4C18.6 20.1726 18.6 20.1726 18.8 20.3717C19 20.5708 18.8 20.5708 18.8 20.7699ZM29 24.1549C28.8 23.9558 28.2 23.7566 27.6 23.7566C26.8 23.7566 26.2 23.9558 25.8 24.354C25.4 24.7522 25.2 25.7478 25.2 26.5442V33.3142C25.2 33.5133 25.2 33.5133 25 33.7124C24.8 33.9115 24.8 33.9115 24.8 33.9115H21.2C21 33.9115 21 33.9115 20.8 33.7124C20.6 33.5133 20.6 33.5133 20.6 33.3142V20.7699C20.6 20.5708 20.6 20.5708 20.8 20.3717C21 20.1726 21 20.1726 21.2 20.1726H24.6C24.8 20.1726 24.8 20.1726 25 20.1726C25.2 20.1726 25.2 20.3717 25.2 20.3717C25.2 20.5708 25.2 20.5708 25.2 20.5708C25.2 20.5708 25.2 20.7699 25.2 20.969C26 20.3717 27.2 19.9735 28.8 19.9735C30.4 19.9735 31.8 20.3717 32.6 21.1681C33.4 21.9646 34 23.1593 34 24.9513V33.5133C34 33.7124 34 33.7124 33.8 33.9115C33.6 34.1106 33.6 33.9115 33.6 33.9115H29.8C29.6 33.9115 29.6 33.9115 29.4 33.7124C29.2 33.5133 29.4 33.5133 29.4 33.3142V25.7478C29.4 24.9513 29.2 24.5531 29 24.1549Z" fill="#007BB5"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="article-body">
-                        <p class="image-credit" mobile><strong>Cover Image:</strong> A stripy monarch caterpillar (Danaus plexippus) gorges on a
-                            butterfly milkweed. Photo by: Sarah Mac Farland
-                            <strong>Photo by:</strong> Sarah Mac Farland
-                        </p>
-                        <p class="article__first-paragraph article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat et feugiat auctor mauris consectetur adipiscing
-                            elit. Feugiat et feugiat auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius ultrices id diam
-                            elit amet. Lacinia cursus morbi dui vulputate.</p>
-                        <div class="article__subhead-section">
-                            <h2 class="article__subhead">Abstract</h2>
-                            <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat et feugiat auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius ultrices id diam elit amet. Lacinia Feugiat et Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat et feugiat auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius ultrices id diam elit amet. Lacinia cursus morbi dui vulputate.</p>
-                        </div>
-                        <div class="advertisement">
-                            <p class="advertisement__label">ADVERTISEMENT</p>
-                            <div class="advertisement__block ratio728x90"></div>
-                        </div>
-                        <div class="article__subhead-section">
-                            <h2 class="article__subhead">Lorem</h2>
-                            <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat et feugiat auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius ultrices id diam elit amet. Lacinia Feugiat et Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat et feugiat auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius ultrices id diam elit amet. Lacinia cursus morbi dui vulputate.</p>
-                        </div>
-                        <figure class="article__figure">
-                            <img loading="lazy" src="./dist/img/image 36.png" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat et feugiat auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius ultrices id diam elit amet. Lacinia Feugiat et Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
-                            <figcaption class="image-credit">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat et feugiat auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius ultrices id diam elit amet. Lacinia Feugiat et Lorem ipsum dolor sit amet, consectetur adipiscing elit.</figcaption>
-                        </figure>
-                        <div class="article__subhead-section">
-                            <h2 class="article__subhead">Ipsum</h2>
-                            <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat et feugiat auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius ultrices id diam elit amet. Lacinia Feugiat et Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat et feugiat auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius ultrices id diam elit amet. Lacinia cursus morbi dui vulputate.</p>
-                            <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat et feugiat auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius ultrices id diam elit amet. Lacinia Feugiat et Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat et feugiat auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius ultrices id diam elit amet. Lacinia cursus morbi dui vulputate.</p>
-                        </div>
-                        <div class="flex-wrapper">
-                            <blockquote class="blockquote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat et feugiat auctor mauris nisi, pellentesque</blockquote>
-                            <figure class="article__figure">
-                                <img loading="lazy" src="./dist/img/image 4.png" alt="Samples Quality chart">
-                            </figure>
-                        </div>
-                        <div class="article__subhead-section">
-                            <h2 class="article__subhead">Conclusion</h2>
-                            <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat et feugiat auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius ultrices id diam elit amet. Lacinia Feugiat et Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat et feugiat auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius ultrices id diam elit amet. Lacinia cursus morbi dui vulputate.</p>
-                        </div>
-                        <div class="tags">
-                            <span class="tag" tabindex="0">Climate</span>
-                            <span class="tag" tabindex="0">Fire</span>
-                            <span class="tag" tabindex="0">Australia</span>
-                        </div>
-                        <div class="article__posts">
-                            <div class="article__post article__post--next" tabindex="0">
-                                <div class="article__post-wrapper">
-                                    <div class="article__post-title">
-                                        next post
-                                    </div>
-                                    <div class="article__post-excerpt">
-                                        DNA recovered from Arctic lakes holds clues for our future
-                                    </div>
-                                </div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.44661 1.88667L9.33328 0L17.3333 8L9.33328 16L7.44661 14.1133L12.2266 9.33333H0V6.66667H12.2266L7.44661 1.88667Z" fill="#707070"/>
-                                </svg>
-                            </div>
-                            <div class="article__post article__post--prev" tabindex="0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5534 14.1133L8.66672 16L0.666717 8L8.66672 8.15941e-07L10.5534 1.88667L5.77339 6.66667L18 6.66667L18 9.33333L5.77338 9.33333L10.5534 14.1133Z" fill="#707070"/>
-                                </svg>
-                                <div class="article__post-wrapper">
-                                    <div class="article__post-title">
-                                        Previous post
-                                    </div>
-                                    <div class="article__post-excerpt">
-                                        Microsatellites will capture GPS reflections to sharpen weather
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <section class="about-author">
-                            <div class="tabs__wrapper">
-                                <h2 class="about-author__headline">ABOUT THE AUTHOR</h2>
-                                <div class="about-author__wrapper">
-                                    <div class="about-author__avatar"></div>
-                                    <div class="about-author__info">
-                                        <div class="about-author__content">
-                                            <div class="about-author__text">
-                                                <div class="about-author__name">Mohammad Shehadeh</div>
-                                                <div class="about-author__title">Team Lead</div>
-                                            </div>
-                                            <div class="about-author__socials">
-                                                <a class="about-author__social" href="#social">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
-                                                        <path d="M22.431 9.3335H10.5689C10.3738 9.3335 10.1867 9.411 10.0487 9.54896C9.91076 9.68692 9.83325 9.87403 9.83325 10.0691V21.9312C9.83325 22.1263 9.91076 22.3134 10.0487 22.4514C10.1867 22.5893 10.3738 22.6668 10.5689 22.6668H16.9597V17.5105H15.2241V15.4921H16.9597V14.0071C16.9597 12.2852 18.0126 11.3473 19.5482 11.3473C20.0657 11.3462 20.5829 11.3723 21.0976 11.4255V13.2255H20.0401C19.2034 13.2255 19.0401 13.6209 19.0401 14.2048V15.4898H21.0401L20.7804 17.5082H19.0287V22.6668H22.431C22.6261 22.6668 22.8132 22.5893 22.9511 22.4514C23.0891 22.3134 23.1666 22.1263 23.1666 21.9312V10.0691C23.1666 9.87403 23.0891 9.68692 22.9511 9.54896C22.8132 9.411 22.6261 9.3335 22.431 9.3335V9.3335Z" fill="#707070"/>
-                                                    </svg>
-                                                </a>
-                                                <a class="about-author__social" href="#social">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
-                                                        <path d="M13.0333 10.9264C13.0333 11.3246 12.8999 11.7229 12.4999 12.1211C12.0999 12.5193 11.8333 12.5193 11.4333 12.5193C11.0333 12.5193 10.6333 12.3866 10.3666 12.1211C10.0999 11.8556 9.83325 11.3246 9.83325 10.9264C9.83325 10.5282 9.96659 10.13 10.3666 9.73173C10.7666 9.3335 11.0333 9.3335 11.4333 9.3335C11.8333 9.3335 12.2333 9.46624 12.6333 9.86447C13.0333 10.2627 13.0333 10.5282 13.0333 10.9264ZM13.0333 13.8468V22.2096C13.0333 22.3423 13.0333 22.3423 12.8999 22.4751C12.7666 22.6078 12.7666 22.6078 12.6333 22.6078H10.2333C10.0999 22.6078 10.0999 22.6078 9.96659 22.4751C9.83325 22.3423 9.96659 22.3423 9.96659 22.2096V13.8468C9.96659 13.714 9.96659 13.714 10.0999 13.5813C10.2333 13.4485 10.2333 13.4485 10.3666 13.4485H12.7666C12.8999 13.4485 12.8999 13.4485 13.0333 13.5813C13.1666 13.714 13.0333 13.714 13.0333 13.8468ZM19.8333 16.1034C19.6999 15.9707 19.2999 15.8379 18.8999 15.8379C18.3666 15.8379 17.9666 15.9707 17.6999 16.2362C17.4333 16.5016 17.2999 17.1654 17.2999 17.6963V22.2096C17.2999 22.3423 17.2999 22.3423 17.1666 22.4751C17.0333 22.6078 17.0333 22.6078 17.0333 22.6078H14.6333C14.4999 22.6078 14.4999 22.6078 14.3666 22.4751C14.2333 22.3423 14.2333 22.3423 14.2333 22.2096V13.8468C14.2333 13.714 14.2333 13.714 14.3666 13.5813C14.4999 13.4485 14.4999 13.4485 14.6333 13.4485H16.8999C17.0333 13.4485 17.0333 13.4485 17.1666 13.4485C17.2999 13.4485 17.2999 13.5813 17.2999 13.5813C17.2999 13.714 17.2999 13.714 17.2999 13.714C17.2999 13.714 17.2999 13.8468 17.2999 13.9795C17.8333 13.5813 18.6333 13.3158 19.6999 13.3158C20.7666 13.3158 21.6999 13.5813 22.2333 14.1123C22.7666 14.6432 23.1666 15.4397 23.1666 16.6344V22.3423C23.1666 22.4751 23.1666 22.4751 23.0333 22.6078C22.8999 22.7406 22.8999 22.6078 22.8999 22.6078H20.3666C20.2333 22.6078 20.2333 22.6078 20.0999 22.4751C19.9666 22.3423 20.0999 22.3423 20.0999 22.2096V17.1654C20.0999 16.6344 19.9666 16.3689 19.8333 16.1034Z" fill="#707070"/>
-                                                    </svg>
-                                                </a>
-                                                <a class="about-author__social" href="#social">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
-                                                        <path d="M21.8333 12.963C21.8333 13.1111 21.8333 13.2593 21.8333 13.4074C21.8333 14.4444 21.5666 15.4815 21.2999 16.3704C21.0333 17.2593 20.4999 18.2963 19.8333 19.1852C19.1666 20.0741 18.3666 20.6667 17.2999 21.2593C16.2333 21.8519 15.1666 22 13.9666 22C12.4999 22 11.1666 21.5556 9.83325 20.6667C10.0999 20.6667 10.2333 20.6667 10.4999 20.6667C11.8333 20.6667 12.8999 20.2222 13.9666 19.3333C13.2999 19.3333 12.7666 19.037 12.3666 18.7407C11.9666 18.4444 11.5666 17.8519 11.4333 17.2593C11.5666 17.2593 11.6999 17.2593 11.9666 17.2593C12.2333 17.2593 12.4999 17.2593 12.6333 17.1111C11.9666 17.1111 11.4333 16.6667 11.0333 16.2222C10.6333 15.7778 10.3666 15.037 10.3666 14.2963C10.7666 14.4444 11.1666 14.5926 11.5666 14.5926C10.7666 14 10.3666 13.1111 10.3666 12.0741C10.3666 11.4815 10.4999 11.037 10.7666 10.5926C11.4333 11.4815 12.2333 12.2222 13.2999 12.8148C14.3666 13.4074 15.2999 13.7037 16.4999 13.7037C16.4999 13.4074 16.4999 13.2593 16.4999 12.963C16.4999 12.0741 16.7666 11.4815 17.2999 10.8889C17.8333 10.2963 18.3666 10 19.0333 10C19.8333 10 20.4999 10.2963 21.0333 10.8889C21.6999 10.7407 22.2333 10.4444 22.7666 10.1481C22.6333 10.8889 22.2333 11.4815 21.5666 11.9259C22.0999 11.7778 22.6333 11.6296 23.1666 11.4815C22.7666 12.0741 22.3666 12.5185 21.8333 12.963Z" fill="#707070"/>
-                                                    </svg>
-                                                </a>
-                                                <a class="about-author__social" href="#social">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
-                                                        <path d="M23.5251 12.3353C23.3584 11.6816 22.8584 11.1654 22.2251 10.9848C21.0834 10.6665 16.5001 10.6665 16.5001 10.6665C16.5001 10.6665 11.9167 10.6665 10.7667 10.9848C10.1334 11.1568 9.64175 11.673 9.46675 12.3353C9.16675 13.5224 9.16675 15.9998 9.16675 15.9998C9.16675 15.9998 9.16675 18.4773 9.47508 19.6644C9.64175 20.3181 10.1417 20.8342 10.7751 21.0149C11.9167 21.3332 16.5001 21.3332 16.5001 21.3332C16.5001 21.3332 21.0834 21.3332 22.2334 21.0149C22.8667 20.8428 23.3584 20.3267 23.5334 19.6644C23.8334 18.4773 23.8334 15.9998 23.8334 15.9998C23.8334 15.9998 23.8334 13.5224 23.5251 12.3353ZM15.0001 18.2536V13.7461L18.8334 15.9998L15.0001 18.2536Z" fill="#707070"/>
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="about-author__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat et feugiat auctor mauris nisi, pellentesque sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat et feugiat auctor mauris nisi.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="right-rail">
-                        <section class="author" desktop>
-                            <div class="author__wrapper">
-                                <div class="author-info">
-                                    <div class="author__img" role="img"></div>
-                                    <div class="author__text">
-                                        <div class="author__name">Mohammad Shehadeh</div>
-                                        <div class="author__title">Team Lead</div>
-                                    </div>
-                                </div>
-                                <div class="article__details">
-                                    <div class="article__detail article__detail--publish-date">
-                                        <svg class="article__detail-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" fill="#FFFFFF">
-                                            <path d="M12.3333 2.00002H11.6666V0.666687H10.3333V2.00002H3.66659V0.666687H2.33325V2.00002H1.66659C0.933252 2.00002 0.333252 2.60002 0.333252 3.33335V14C0.333252 14.7334 0.933252 15.3334 1.66659 15.3334H12.3333C13.0666 15.3334 13.6666 14.7334 13.6666 14V3.33335C13.6666 2.60002 13.0666 2.00002 12.3333 2.00002ZM12.3333 14H1.66659V5.33335H12.3333V14Z" fill="white"/>
-                                        </svg>
-                                        Aug. 11, 2202, 9:00 AM
-                                    </div>
-                                    <div class="article__detail article__detail--shares">
-                                        <svg class="article__detail-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="#FFFFFF">
-                                            <path d="M9.55564 8.48795C9.10527 8.48795 8.69934 8.66566 8.39119 8.95181L4.16897 6.4488C4.20156 6.31325 4.2223 6.17169 4.2223 6.02711C4.2223 5.88253 4.20156 5.74096 4.16897 5.60542L8.34675 3.12651C8.66378 3.42771 9.08749 3.61446 9.55564 3.61446C10.5364 3.61446 11.3334 2.80422 11.3334 1.80723C11.3334 0.810241 10.5364 2.87251e-09 9.55564 2.87251e-09C8.5749 2.87251e-09 7.77786 0.810241 7.77786 1.80723C7.77786 1.95181 7.7986 2.09337 7.83119 2.22892L3.65341 4.70783C3.33638 4.40663 2.91267 4.21988 2.44453 4.21988C1.46379 4.21988 0.666748 5.03012 0.666748 6.02711C0.666748 7.0241 1.46379 7.83434 2.44453 7.83434C2.91267 7.83434 3.33638 7.64759 3.65341 7.34639L7.87564 9.8494C7.84601 9.9759 7.82823 10.1084 7.82823 10.244C7.82823 11.2139 8.60156 12 9.55564 12C10.5097 12 11.283 11.2139 11.283 10.244C11.283 9.2741 10.5097 8.48795 9.55564 8.48795Z" fill="white"/>
-                                        </svg>
-                                        1K Shares
-                                    </div>
-                                    <div class="article__detail article__detail--views">
-                                        <svg class="article__detail-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="#FFFFFF">
-                                            <path d="M6 0C3.27273 0 0.943636 1.65867 0 4C0.943636 6.34133 3.27273 8 6 8C8.73 8 11.0564 6.34133 12 4C11.0564 1.65867 8.73 0 6 0ZM6 6.66667C4.49455 6.66667 3.27273 5.472 3.27273 4C3.27273 2.528 4.49455 1.33333 6 1.33333C7.50545 1.33333 8.72727 2.528 8.72727 4C8.72727 5.472 7.50545 6.66667 6 6.66667ZM6 2.4C5.09727 2.4 4.36364 3.11733 4.36364 4C4.36364 4.88267 5.09727 5.6 6 5.6C6.90273 5.6 7.63636 4.88267 7.63636 4C7.63636 3.11733 6.90273 2.4 6 2.4Z" fill="white"/>
-                                        </svg>
-                                        5K Views
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <div class="advertisement">
-                            <div class="tabs__wrapper">
-                                <p class="advertisement__label">ADVERTISEMENT</p>
-                                <div class="advertisement__block ratio300x250"></div>
-                            </div>
-                        </div>
-                        <div class="newsletter">
-                            <div class="newsletter__wrapper tabs__wrapper">
-                                <div class="newsletter__title">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="42" viewBox="0 0 48 42" fill="none">
-                                        <path d="M44.5659 9.62608L12.4787 1.02833C10.2727 0.437236 7.99148 1.73117 7.40934 3.90374L1.05873 27.6045C0.476594 29.7771 1.8052 32.0383 4.0112 32.6294L36.0984 41.2271C38.3044 41.8182 40.5856 40.5243 41.1678 38.3517L47.5184 14.6509C48.1005 12.4784 46.7719 10.2172 44.5659 9.62608ZM37.1569 37.277L5.06963 28.6792L10.3618 8.92859L23.7593 23.1028L42.449 17.5263L37.1569 37.277ZM24.8178 19.1527L11.4202 4.97846L43.5075 13.5762L24.8178 19.1527Z" fill="#707070"/>
-                                    </svg>
-                                    <p>Subscribe to our <strong>Newsletter</strong></p>
-                                </div>
-                                <div class="newsletter__description">No spam, notifications only about new products, update</div>
-                                <div class="newsletter__form">
-                                    <div class="newsletter__form-control">
-                                        <input class="newsletter__input" name="email" placeholder="Enter your email here">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
-                                            <path d="M16.6667 4.28711H3.33341C2.41258 4.28711 1.67508 5.03294 1.67508 5.95378L1.66675 15.9538C1.66675 16.8746 2.41258 17.6204 3.33341 17.6204H16.6667C17.5876 17.6204 18.3334 16.8746 18.3334 15.9538V5.95378C18.3334 5.03294 17.5876 4.28711 16.6667 4.28711ZM16.6667 7.62044L10.0001 11.7871L3.33341 7.62044V5.95378L10.0001 10.1204L16.6667 5.95378V7.62044Z" fill="#707070"/>
-                                        </svg>
-                                    </div>
-                                    <div class="newsletter__submit">submit</div>
-                                </div>
-                            </div>
-                        </div>
-                        <section class="tabs">
-                            <div class="tabs__wrapper">
-                                <div class="tabs__panel">
-                                    <div class="tabs__label tabs__label--active" data-tab>latest</div>
-                                    <div class="tabs__label" data-tab>popular</div>
-                                    <div class="tabs__label" data-tab>Trending</div>
-                                </div>
-                                <div class="tabs__gropus-container">
-                                    <div class="tabs__groups tabs__groups--active" data-panel>
-                                        <div class="tab__group">
-                                            <img loading="lazy" class="tab__group__image" alt="" src="./dist/img/image 13.png">
-                                            <div class="tab__group__info">
-                                                <div class="tab__group__title">Could walking help lower cancer risk?</div>
-                                                <div class="tab__group__text">By <a href="#" class="tab__group__text-author">Iasonas Georgiadis</a>  |  15 June 2019</div>
-                                            </div>
-                                        </div>
-                                        <div class="tab__group">
-                                            <img loading="lazy" class="tab__group__image" alt="" src="./dist/img/image 14.png">
-                                            <div class="tab__group__info">
-                                                <div class="tab__group__title">DNA recovered from Arctic lakes holds clues for our future world</div>
-                                                <div class="tab__group__text">By <a href="#" class="tab__group__text-author">Iasonas Georgiadis</a>  |  15 June 2019</div>
-                                            </div>
-                                        </div>
-                                        <div class="tab__group">
-                                            <img loading="lazy" class="tab__group__image" alt="" src="./dist/img/image 16.png">
-                                            <div class="tab__group__info">
-                                                <div class="tab__group__title">How a volcanic eruption helped create modern Scotland</div>
-                                                <div class="tab__group__text">By <a href="#" class="tab__group__text-author">Iasonas Georgiadis</a>  |  15 June 2019</div>
-                                            </div>
-                                        </div>
-                                        <div class="tab__group">
-                                            <img loading="lazy" class="tab__group__image" alt="" src="./dist/img/image 18.png">
-                                            <div class="tab__group__info">
-                                                <div class="tab__group__title">Archaeologists unearth graves of ancient warrior women in Russia</div>
-                                                <div class="tab__group__text">By <a href="#" class="tab__group__text-author">Iasonas Georgiadis</a>  |  15 June 2019</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tabs__groups" data-panel>
-                                        <div class="tab__group">
-                                            <img loading="lazy" class="tab__group__image" alt="" src="./dist/img/image 13.png">
-                                            <div class="tab__group__info">
-                                                <div class="tab__group__title">Could walking help lower cancer risk?</div>
-                                                <div class="tab__group__text">By <a href="#" class="tab__group__text-author">Iasonas Georgiadis</a>  |  15 June 2019</div>
-                                            </div>
-                                        </div>
-                                        <div class="tab__group">
-                                            <img loading="lazy" class="tab__group__image" alt="" src="./dist/img/image 14.png">
-                                            <div class="tab__group__info">
-                                                <div class="tab__group__title">DNA recovered from Arctic lakes holds clues for our future world</div>
-                                                <div class="tab__group__text">By <a href="#" class="tab__group__text-author">Iasonas Georgiadis</a>  |  15 June 2019</div>
-                                            </div>
-                                        </div>
-                                        <div class="tab__group">
-                                            <img loading="lazy" class="tab__group__image" alt="" src="./dist/img/image 16.png">
-                                            <div class="tab__group__info">
-                                                <div class="tab__group__title">How a volcanic eruption helped create modern Scotland</div>
-                                                <div class="tab__group__text">By <a href="#" class="tab__group__text-author">Iasonas Georgiadis</a>  |  15 June 2019</div>
-                                            </div>
-                                        </div>
-                                        <div class="tab__group">
-                                            <img loading="lazy" class="tab__group__image" alt="" src="./dist/img/image 18.png">
-                                            <div class="tab__group__info">
-                                                <div class="tab__group__title">Archaeologists unearth graves of ancient warrior women in Russia</div>
-                                                <div class="tab__group__text">By <a href="#" class="tab__group__text-author">Iasonas Georgiadis</a>  |  15 June 2019</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tabs__groups" data-panel>
-                                        <div class="tab__group">
-                                            <img loading="lazy" class="tab__group__image" alt="" src="./dist/img/image 13.png">
-                                            <div class="tab__group__info">
-                                                <div class="tab__group__title">Could walking help lower cancer risk?</div>
-                                                <div class="tab__group__text">By <a href="#" class="tab__group__text-author">Iasonas Georgiadis</a>  |  15 June 2019</div>
-                                            </div>
-                                        </div>
-                                        <div class="tab__group">
-                                            <img loading="lazy" class="tab__group__image" alt="" src="./dist/img/image 14.png">
-                                            <div class="tab__group__info">
-                                                <div class="tab__group__title">DNA recovered from Arctic lakes holds clues for our future world</div>
-                                                <div class="tab__group__text">By <a href="#" class="tab__group__text-author">Iasonas Georgiadis</a>  |  15 June 2019</div>
-                                            </div>
-                                        </div>
-                                        <div class="tab__group">
-                                            <img loading="lazy" class="tab__group__image" alt="" src="./dist/img/image 16.png">
-                                            <div class="tab__group__info">
-                                                <div class="tab__group__title">How a volcanic eruption helped create modern Scotland</div>
-                                                <div class="tab__group__text">By <a href="#" class="tab__group__text-author">Iasonas Georgiadis</a>  |  15 June 2019</div>
-                                            </div>
-                                        </div>
-                                        <div class="tab__group">
-                                            <img loading="lazy" class="tab__group__image" alt="" src="./dist/img/image 18.png">
-                                            <div class="tab__group__info">
-                                                <div class="tab__group__title">Archaeologists unearth graves of ancient warrior women in Russia</div>
-                                                <div class="tab__group__text">By <a href="#" class="tab__group__text-author">Iasonas Georgiadis</a>  |  15 June 2019</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="about" mobile>
-                            <div class="about__wrapper tabs__wrapper">
-                                <h2 class="about-title">About KFSH&RC</h2>
-                                <div class="about-text">In Geoscience Online Blog you can find anything about geology science. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat et feugiat auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius ultrices id diam.</div>
-                            </div>
-                        </section>
-                        <section class="follow-us" desktop>
-                            <div class="follow-us__wrapper tabs__wrapper">
-                                <div class="follow-us-title about-title">follow us</div>
-                                <div class="follow-us-icons">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                                        <circle cx="24" cy="24" r="24" fill="#3B5998"/>
-                                        <path d="M32.8966 14H15.1034C14.8108 14 14.5301 14.1163 14.3232 14.3232C14.1163 14.5301 14 14.8108 14 15.1034V32.8966C14 33.1892 14.1163 33.4699 14.3232 33.6768C14.5301 33.8837 14.8108 34 15.1034 34H24.6897V26.2655H22.0862V23.2379H24.6897V21.0103C24.6897 18.4276 26.269 17.0207 28.5724 17.0207C29.3486 17.019 30.1244 17.0581 30.8966 17.1379V19.8379H29.3103C28.0552 19.8379 27.8103 20.431 27.8103 21.3069V23.2345H30.8103L30.4207 26.2621H27.7931V34H32.8966C33.1892 34 33.4699 33.8837 33.6768 33.6768C33.8837 33.4699 34 33.1892 34 32.8966V15.1034C34 14.8108 33.8837 14.5301 33.6768 14.3232C33.4699 14.1163 33.1892 14 32.8966 14V14Z" fill="white"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                                        <circle cx="24" cy="24" r="24" fill="#1DA1F2"/>
-                                        <path d="M32 19.4444C32 19.6667 32 19.8889 32 20.1111C32 21.6667 31.6 23.2222 31.2 24.5556C30.8 25.8889 30 27.4444 29 28.7778C28 30.1111 26.8 31 25.2 31.8889C23.6 32.7778 22 33 20.2 33C18 33 16 32.3333 14 31C14.4 31 14.6 31 15 31C17 31 18.6 30.3333 20.2 29C19.2 29 18.4 28.5556 17.8 28.1111C17.2 27.6667 16.6 26.7778 16.4 25.8889C16.6 25.8889 16.8 25.8889 17.2 25.8889C17.6 25.8889 18 25.8889 18.2 25.6667C17.2 25.6667 16.4 25 15.8 24.3333C15.2 23.6667 14.8 22.5556 14.8 21.4444C15.4 21.6667 16 21.8889 16.6 21.8889C15.4 21 14.8 19.6667 14.8 18.1111C14.8 17.2222 15 16.5556 15.4 15.8889C16.4 17.2222 17.6 18.3333 19.2 19.2222C20.8 20.1111 22.2 20.5556 24 20.5556C24 20.1111 24 19.8889 24 19.4444C24 18.1111 24.4 17.2222 25.2 16.3333C26 15.4444 26.8 15 27.8 15C29 15 30 15.4444 30.8 16.3333C31.8 16.1111 32.6 15.6667 33.4 15.2222C33.2 16.3333 32.6 17.2222 31.6 17.8889C32.4 17.6667 33.2 17.4444 34 17.2222C33.4 18.1111 32.8 18.7778 32 19.4444Z" fill="white"/>
-                                        </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                                        <circle cx="24" cy="24" r="24" fill="#EB3223"/>
-                                        <path d="M34.5375 18.5032C34.2875 17.5226 33.5375 16.7484 32.5875 16.4774C30.875 16 24 16 24 16C24 16 17.125 16 15.4 16.4774C14.45 16.7355 13.7125 17.5097 13.45 18.5032C13 20.2839 13 24 13 24C13 24 13 27.7161 13.4625 29.4968C13.7125 30.4774 14.4625 31.2516 15.4125 31.5226C17.125 32 24 32 24 32C24 32 30.875 32 32.6 31.5226C33.55 31.2645 34.2875 30.4903 34.55 29.4968C35 27.7161 35 24 35 24C35 24 35 20.2839 34.5375 18.5032ZM21.75 27.3806V20.6194L27.5 24L21.75 27.3806Z" fill="white"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                                        <circle cx="24" cy="24" r="24" fill="#007BB5"/>
-                                        <path d="M18.8 16.3894C18.8 16.9867 18.6 17.5841 18 18.1814C17.4 18.7788 17 18.7788 16.4 18.7788C15.8 18.7788 15.2 18.5796 14.8 18.1814C14.4 17.7832 14 16.9867 14 16.3894C14 15.792 14.2 15.1947 14.8 14.5973C15.4 14 15.8 14 16.4 14C17 14 17.6 14.1991 18.2 14.7965C18.8 15.3938 18.8 15.792 18.8 16.3894ZM18.8 20.7699V33.3142C18.8 33.5133 18.8 33.5133 18.6 33.7124C18.4 33.9115 18.4 33.9115 18.2 33.9115H14.6C14.4 33.9115 14.4 33.9115 14.2 33.7124C14 33.5133 14.2 33.5133 14.2 33.3142V20.7699C14.2 20.5708 14.2 20.5708 14.4 20.3717C14.6 20.1726 14.6 20.1726 14.8 20.1726H18.4C18.6 20.1726 18.6 20.1726 18.8 20.3717C19 20.5708 18.8 20.5708 18.8 20.7699ZM29 24.1549C28.8 23.9558 28.2 23.7566 27.6 23.7566C26.8 23.7566 26.2 23.9558 25.8 24.354C25.4 24.7522 25.2 25.7478 25.2 26.5442V33.3142C25.2 33.5133 25.2 33.5133 25 33.7124C24.8 33.9115 24.8 33.9115 24.8 33.9115H21.2C21 33.9115 21 33.9115 20.8 33.7124C20.6 33.5133 20.6 33.5133 20.6 33.3142V20.7699C20.6 20.5708 20.6 20.5708 20.8 20.3717C21 20.1726 21 20.1726 21.2 20.1726H24.6C24.8 20.1726 24.8 20.1726 25 20.1726C25.2 20.1726 25.2 20.3717 25.2 20.3717C25.2 20.5708 25.2 20.5708 25.2 20.5708C25.2 20.5708 25.2 20.7699 25.2 20.969C26 20.3717 27.2 19.9735 28.8 19.9735C30.4 19.9735 31.8 20.3717 32.6 21.1681C33.4 21.9646 34 23.1593 34 24.9513V33.5133C34 33.7124 34 33.7124 33.8 33.9115C33.6 34.1106 33.6 33.9115 33.6 33.9115H29.8C29.6 33.9115 29.6 33.9115 29.4 33.7124C29.2 33.5133 29.4 33.5133 29.4 33.3142V25.7478C29.4 24.9513 29.2 24.5531 29 24.1549Z" fill="white"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="tags">
-                            <div class="tabs__wrapper">
-                                <h2 class="tag-title">Tags</h2>
-                                <div class="tags__wrapper">
-                                    <div class="tag-label">Health</div>
-                                    <div class="tag-label">Life</div>
-                                    <div class="tag-label">Women</div>
-                                    <div class="tag-label">Men</div>
-                                    <div class="tag-label">Family’s Health</div>
-                                    <div class="tag-label">Nutrition</div>
-                                    <div class="tag-label">Kids</div>
-                                    <div class="tag-label">Diseases</div>
-                                    <div class="tag-label">Habits</div>
-                                    <div class="tag-label">Healty</div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </section>
-            </article>
-            <section class="related-posts">
-                <div class="related-posts__wrapper">
-                    <div class="related-posts__title">RELATED POSTS</div>
-                    <div class="related-posts__grid">
-                        <div class="related-posts__item">
-                            <div class="related-posts__item-preview" data-label="Healthy Lifestyle">
-                                <img loading="lazy" class="related-posts__item-img" alt="" src="./dist/img/image 13.png">
-                            </div>
-                            <div class="related-posts__item-content">
-                                <div class="related-posts__item-title">Smarter Food Choices 101 Tips For Busy Women</div>
-                                <div class="related-posts__item-text">By Ibrahim Rahhal  |  Posted: 15 June 2022 </div>
-                            </div>
-                        </div>
-                        <div class="related-posts__item">
-                            <div class="related-posts__item-preview" data-label="Healthy Lifestyle">
-                                <img loading="lazy" class="related-posts__item-img" alt="" src="./dist/img/image 3.png">
-                            </div>
-                            <div class="related-posts__item-content">
-                                <div class="related-posts__item-title">Smarter Food Choices 101 Tips For Busy Women</div>
-                                <div class="related-posts__item-text">By Ibrahim Rahhal  |  Posted: 15 June 2022 </div>
-                            </div>
-                        </div>
-                        <div class="related-posts__item">
-                            <div class="related-posts__item-preview" data-label="Healthy Lifestyle">
-                                <img loading="lazy" class="related-posts__item-img" alt="" src="./dist/img/image 38.png">
-                            </div>
-                            <div class="related-posts__item-content">
-                                <div class="related-posts__item-title">Smarter Food Choices 101 Tips For Busy Women</div>
-                                <div class="related-posts__item-text">By Ibrahim Rahhal  |  Posted: 15 June 2022 </div>
-                            </div>
-                        </div>
-                        <div class="related-posts__item">
-                            <div class="related-posts__item-preview" data-label="Healthy Lifestyle">
-                                <img loading="lazy" class="related-posts__item-img" alt="" src="./dist/img/image 30.png">
-                            </div>
-                            <div class="related-posts__item-content">
-                                <div class="related-posts__item-title">Smarter Food Choices 101 Tips For Busy Women</div>
-                                <div class="related-posts__item-text">By Ibrahim Rahhal  |  Posted: 15 June 2022 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider__buttons" mobile>
-                        <div class="slider__button slider__button--prev disabled">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                <path d="M18.5264 23.668L20.3137 21.8841L14.5221 16.1038L20.3137 10.3236L18.5264 8.53968L10.9474 16.1038L18.5264 23.668Z" fill="white"/>
+                    <div class="article__details">
+                        <div class="article__detail article__detail--publish-date">
+                            <svg class="article__detail-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="16"
+                                viewBox="0 0 14 16" fill="#FFFFFF">
+                                <path
+                                    d="M12.3333 2.00002H11.6666V0.666687H10.3333V2.00002H3.66659V0.666687H2.33325V2.00002H1.66659C0.933252 2.00002 0.333252 2.60002 0.333252 3.33335V14C0.333252 14.7334 0.933252 15.3334 1.66659 15.3334H12.3333C13.0666 15.3334 13.6666 14.7334 13.6666 14V3.33335C13.6666 2.60002 13.0666 2.00002 12.3333 2.00002ZM12.3333 14H1.66659V5.33335H12.3333V14Z"
+                                    fill="white" />
                             </svg>
+                            Aug. 11, 2202, 9:00 AM
                         </div>
-                        <div class="slider__dots"></div>
-                        <div class="slider__button slider__button--next">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                <path d="M13.4736 8.53906L11.6863 10.3229L17.4779 16.1032L11.6863 21.8835L13.4736 23.6674L21.0526 16.1032L13.4736 8.53906Z" fill="white"/>
+                        <div class="article__detail article__detail--shares">
+                            <svg class="article__detail-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                viewBox="0 0 12 12" fill="#FFFFFF">
+                                <path
+                                    d="M9.55564 8.48795C9.10527 8.48795 8.69934 8.66566 8.39119 8.95181L4.16897 6.4488C4.20156 6.31325 4.2223 6.17169 4.2223 6.02711C4.2223 5.88253 4.20156 5.74096 4.16897 5.60542L8.34675 3.12651C8.66378 3.42771 9.08749 3.61446 9.55564 3.61446C10.5364 3.61446 11.3334 2.80422 11.3334 1.80723C11.3334 0.810241 10.5364 2.87251e-09 9.55564 2.87251e-09C8.5749 2.87251e-09 7.77786 0.810241 7.77786 1.80723C7.77786 1.95181 7.7986 2.09337 7.83119 2.22892L3.65341 4.70783C3.33638 4.40663 2.91267 4.21988 2.44453 4.21988C1.46379 4.21988 0.666748 5.03012 0.666748 6.02711C0.666748 7.0241 1.46379 7.83434 2.44453 7.83434C2.91267 7.83434 3.33638 7.64759 3.65341 7.34639L7.87564 9.8494C7.84601 9.9759 7.82823 10.1084 7.82823 10.244C7.82823 11.2139 8.60156 12 9.55564 12C10.5097 12 11.283 11.2139 11.283 10.244C11.283 9.2741 10.5097 8.48795 9.55564 8.48795Z"
+                                    fill="white" />
                             </svg>
+                            1K Shares
+                        </div>
+                        <div class="article__detail article__detail--views">
+                            <svg class="article__detail-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="8"
+                                viewBox="0 0 12 8" fill="#FFFFFF">
+                                <path
+                                    d="M6 0C3.27273 0 0.943636 1.65867 0 4C0.943636 6.34133 3.27273 8 6 8C8.73 8 11.0564 6.34133 12 4C11.0564 1.65867 8.73 0 6 0ZM6 6.66667C4.49455 6.66667 3.27273 5.472 3.27273 4C3.27273 2.528 4.49455 1.33333 6 1.33333C7.50545 1.33333 8.72727 2.528 8.72727 4C8.72727 5.472 7.50545 6.66667 6 6.66667ZM6 2.4C5.09727 2.4 4.36364 3.11733 4.36364 4C4.36364 4.88267 5.09727 5.6 6 5.6C6.90273 5.6 7.63636 4.88267 7.63636 4C7.63636 3.11733 6.90273 2.4 6 2.4Z"
+                                    fill="white" />
+                            </svg>
+                            5K Views
                         </div>
                     </div>
                 </div>
             </section>
-			<footer class="footer">
-				<div class="footer__wrapper container">
-                    <div class="footer__scroll-to-top" data-scroll-to-top>
-                        <svg class="footer__icon footer__icon--chevron" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                            <path d="M25 16.6655L12.5 29.1655L15.4479 32.1134L25 22.5614L34.5521 32.1134L37.5 29.1655L25 16.6655Z" fill="#333333"/>
+            <section class="article__wrapper">
+                <!-- Not sure but could be done better -->
+                <div class="left-rail" desktop>
+                    <div class="left-rail__social">
+                        <div class="left-rail__shares"><span class="bold">1k</span>shares</div>
+                        <div class="left-rail__icons">
+                            <div class="left-rail__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
+                                    fill="#3B5998">
+                                    <path
+                                        d="M32.8966 14H15.1034C14.8108 14 14.5301 14.1163 14.3232 14.3232C14.1163 14.5301 14 14.8108 14 15.1034V32.8966C14 33.1892 14.1163 33.4699 14.3232 33.6768C14.5301 33.8837 14.8108 34 15.1034 34H24.6897V26.2655H22.0862V23.2379H24.6897V21.0103C24.6897 18.4276 26.269 17.0207 28.5724 17.0207C29.3486 17.019 30.1244 17.0581 30.8966 17.1379V19.8379H29.3103C28.0552 19.8379 27.8103 20.431 27.8103 21.3069V23.2345H30.8103L30.4207 26.2621H27.7931V34H32.8966C33.1892 34 33.4699 33.8837 33.6768 33.6768C33.8837 33.4699 34 33.1892 34 32.8966V15.1034C34 14.8108 33.8837 14.5301 33.6768 14.3232C33.4699 14.1163 33.1892 14 32.8966 14V14Z"
+                                        fill="#3B5998" />
+                                </svg>
+                            </div>
+                            <div class="left-rail__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
+                                    fill="#1DA1F2">
+                                    <path
+                                        d="M32 19.4444C32 19.6667 32 19.8889 32 20.1111C32 21.6667 31.6 23.2222 31.2 24.5556C30.8 25.8889 30 27.4444 29 28.7778C28 30.1111 26.8 31 25.2 31.8889C23.6 32.7778 22 33 20.2 33C18 33 16 32.3333 14 31C14.4 31 14.6 31 15 31C17 31 18.6 30.3333 20.2 29C19.2 29 18.4 28.5556 17.8 28.1111C17.2 27.6667 16.6 26.7778 16.4 25.8889C16.6 25.8889 16.8 25.8889 17.2 25.8889C17.6 25.8889 18 25.8889 18.2 25.6667C17.2 25.6667 16.4 25 15.8 24.3333C15.2 23.6667 14.8 22.5556 14.8 21.4444C15.4 21.6667 16 21.8889 16.6 21.8889C15.4 21 14.8 19.6667 14.8 18.1111C14.8 17.2222 15 16.5556 15.4 15.8889C16.4 17.2222 17.6 18.3333 19.2 19.2222C20.8 20.1111 22.2 20.5556 24 20.5556C24 20.1111 24 19.8889 24 19.4444C24 18.1111 24.4 17.2222 25.2 16.3333C26 15.4444 26.8 15 27.8 15C29 15 30 15.4444 30.8 16.3333C31.8 16.1111 32.6 15.6667 33.4 15.2222C33.2 16.3333 32.6 17.2222 31.6 17.8889C32.4 17.6667 33.2 17.4444 34 17.2222C33.4 18.1111 32.8 18.7778 32 19.4444Z"
+                                        fill="#1DA1F2" />
+                                </svg>
+                            </div>
+                            <div class="left-rail__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
+                                    fill="#EB3223">
+                                    <path
+                                        d="M34.5375 18.5032C34.2875 17.5226 33.5375 16.7484 32.5875 16.4774C30.875 16 24 16 24 16C24 16 17.125 16 15.4 16.4774C14.45 16.7355 13.7125 17.5097 13.45 18.5032C13 20.2839 13 24 13 24C13 24 13 27.7161 13.4625 29.4968C13.7125 30.4774 14.4625 31.2516 15.4125 31.5226C17.125 32 24 32 24 32C24 32 30.875 32 32.6 31.5226C33.55 31.2645 34.2875 30.4903 34.55 29.4968C35 27.7161 35 24 35 24C35 24 35 20.2839 34.5375 18.5032ZM21.75 27.3806V20.6194L27.5 24L21.75 27.3806Z"
+                                        fill="#EB3223" />
+                                </svg>
+                            </div>
+                            <div class="left-rail__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
+                                    fill="#007BB5">
+                                    <path
+                                        d="M18.8 16.3894C18.8 16.9867 18.6 17.5841 18 18.1814C17.4 18.7788 17 18.7788 16.4 18.7788C15.8 18.7788 15.2 18.5796 14.8 18.1814C14.4 17.7832 14 16.9867 14 16.3894C14 15.792 14.2 15.1947 14.8 14.5973C15.4 14 15.8 14 16.4 14C17 14 17.6 14.1991 18.2 14.7965C18.8 15.3938 18.8 15.792 18.8 16.3894ZM18.8 20.7699V33.3142C18.8 33.5133 18.8 33.5133 18.6 33.7124C18.4 33.9115 18.4 33.9115 18.2 33.9115H14.6C14.4 33.9115 14.4 33.9115 14.2 33.7124C14 33.5133 14.2 33.5133 14.2 33.3142V20.7699C14.2 20.5708 14.2 20.5708 14.4 20.3717C14.6 20.1726 14.6 20.1726 14.8 20.1726H18.4C18.6 20.1726 18.6 20.1726 18.8 20.3717C19 20.5708 18.8 20.5708 18.8 20.7699ZM29 24.1549C28.8 23.9558 28.2 23.7566 27.6 23.7566C26.8 23.7566 26.2 23.9558 25.8 24.354C25.4 24.7522 25.2 25.7478 25.2 26.5442V33.3142C25.2 33.5133 25.2 33.5133 25 33.7124C24.8 33.9115 24.8 33.9115 24.8 33.9115H21.2C21 33.9115 21 33.9115 20.8 33.7124C20.6 33.5133 20.6 33.5133 20.6 33.3142V20.7699C20.6 20.5708 20.6 20.5708 20.8 20.3717C21 20.1726 21 20.1726 21.2 20.1726H24.6C24.8 20.1726 24.8 20.1726 25 20.1726C25.2 20.1726 25.2 20.3717 25.2 20.3717C25.2 20.5708 25.2 20.5708 25.2 20.5708C25.2 20.5708 25.2 20.7699 25.2 20.969C26 20.3717 27.2 19.9735 28.8 19.9735C30.4 19.9735 31.8 20.3717 32.6 21.1681C33.4 21.9646 34 23.1593 34 24.9513V33.5133C34 33.7124 34 33.7124 33.8 33.9115C33.6 34.1106 33.6 33.9115 33.6 33.9115H29.8C29.6 33.9115 29.6 33.9115 29.4 33.7124C29.2 33.5133 29.4 33.5133 29.4 33.3142V25.7478C29.4 24.9513 29.2 24.5531 29 24.1549Z"
+                                        fill="#007BB5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-body">
+                    <p class="image-credit"><strong>Cover Image:</strong> A stripy monarch caterpillar (Danaus
+                        plexippus) gorges on a
+                        butterfly milkweed. Photo by: Sarah Mac Farland
+                        <strong>Photo by:</strong> Sarah Mac Farland
+                    </p>
+                    <p class="article__first-paragraph article__paragraph">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Feugiat et feugiat auctor mauris consectetur adipiscing
+                        elit. Feugiat et feugiat auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius
+                        ultrices id diam
+                        elit amet. Lacinia cursus morbi dui vulputate.</p>
+                    <div class="article__subhead-section">
+                        <h2 class="article__subhead">Abstract</h2>
+                        <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
+                            et feugiat auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius ultrices id
+                            diam elit amet. Lacinia Feugiat et Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Feugiat et feugiat auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius
+                            ultrices id diam elit amet. Lacinia cursus morbi dui vulputate.</p>
+                    </div>
+                    <div class="advertisement">
+                        <p class="advertisement__label">ADVERTISEMENT</p>
+                        <div class="advertisement__block ratio728x90"></div>
+                    </div>
+                    <div class="article__subhead-section">
+                        <h2 class="article__subhead">Lorem</h2>
+                        <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
+                            et feugiat auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius ultrices id
+                            diam elit amet. Lacinia Feugiat et Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Feugiat et feugiat auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius
+                            ultrices id diam elit amet. Lacinia cursus morbi dui vulputate.</p>
+                    </div>
+                    <figure class="article__figure">
+                        <img loading="lazy" src="./public/img/image 36.png"
+                            alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat et feugiat auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius ultrices id diam elit amet. Lacinia Feugiat et Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                        <figcaption class="image-credit">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Feugiat et feugiat auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius
+                            ultrices id diam elit amet. Lacinia Feugiat et Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit.</figcaption>
+                    </figure>
+                    <div class="article__subhead-section">
+                        <h2 class="article__subhead">Ipsum</h2>
+                        <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
+                            et feugiat auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius ultrices id
+                            diam elit amet. Lacinia Feugiat et Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Feugiat et feugiat auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius
+                            ultrices id diam elit amet. Lacinia cursus morbi dui vulputate.</p>
+                        <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
+                            et feugiat auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius ultrices id
+                            diam elit amet. Lacinia Feugiat et Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Feugiat et feugiat auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius
+                            ultrices id diam elit amet. Lacinia cursus morbi dui vulputate.</p>
+                    </div>
+                    <div class="flex-wrapper">
+                        <blockquote class="blockquote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
+                            et feugiat auctor mauris nisi, pellentesque</blockquote>
+                        <figure class="article__figure">
+                            <img loading="lazy" src="./public/img/image 4.png" alt="Samples Quality chart">
+                        </figure>
+                    </div>
+                    <div class="article__subhead-section">
+                        <h2 class="article__subhead">Conclusion</h2>
+                        <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
+                            et feugiat auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius ultrices id
+                            diam elit amet. Lacinia Feugiat et Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Feugiat et feugiat auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius
+                            ultrices id diam elit amet. Lacinia cursus morbi dui vulputate.</p>
+                    </div>
+                    <div class="tags">
+                        <span class="tag" tabindex="0">Climate</span>
+                        <span class="tag" tabindex="0">Fire</span>
+                        <span class="tag" tabindex="0">Australia</span>
+                    </div>
+                    <div class="article__posts">
+                        <div class="article__post article__post--next" tabindex="0">
+                            <div class="article__post-wrapper">
+                                <div class="article__post-title">
+                                    next post
+                                </div>
+                                <div class="article__post-excerpt">
+                                    DNA recovered from Arctic lakes holds clues for our future
+                                </div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.44661 1.88667L9.33328 0L17.3333 8L9.33328 16L7.44661 14.1133L12.2266 9.33333H0V6.66667H12.2266L7.44661 1.88667Z"
+                                    fill="#707070" />
+                            </svg>
+                        </div>
+                        <div class="article__post article__post--prev" tabindex="0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.5534 14.1133L8.66672 16L0.666717 8L8.66672 8.15941e-07L10.5534 1.88667L5.77339 6.66667L18 6.66667L18 9.33333L5.77338 9.33333L10.5534 14.1133Z"
+                                    fill="#707070" />
+                            </svg>
+                            <div class="article__post-wrapper">
+                                <div class="article__post-title">
+                                    Previous post
+                                </div>
+                                <div class="article__post-excerpt">
+                                    Microsatellites will capture GPS reflections to sharpen weather
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="about-author">
+                        <div class="tabs__wrapper">
+                            <h2 class="about-author__headline">ABOUT THE AUTHOR</h2>
+                            <div class="about-author__wrapper">
+                                <div class="about-author__avatar"></div>
+                                <div class="about-author__info">
+                                    <div class="about-author__content">
+                                        <div class="about-author__text">
+                                            <div class="about-author__name">Mohammad Shehadeh</div>
+                                            <div class="about-author__title">Team Lead</div>
+                                        </div>
+                                        <div class="about-author__socials">
+                                            <a class="about-author__social" href="#social">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32"
+                                                    viewBox="0 0 33 32" fill="none">
+                                                    <path
+                                                        d="M22.431 9.3335H10.5689C10.3738 9.3335 10.1867 9.411 10.0487 9.54896C9.91076 9.68692 9.83325 9.87403 9.83325 10.0691V21.9312C9.83325 22.1263 9.91076 22.3134 10.0487 22.4514C10.1867 22.5893 10.3738 22.6668 10.5689 22.6668H16.9597V17.5105H15.2241V15.4921H16.9597V14.0071C16.9597 12.2852 18.0126 11.3473 19.5482 11.3473C20.0657 11.3462 20.5829 11.3723 21.0976 11.4255V13.2255H20.0401C19.2034 13.2255 19.0401 13.6209 19.0401 14.2048V15.4898H21.0401L20.7804 17.5082H19.0287V22.6668H22.431C22.6261 22.6668 22.8132 22.5893 22.9511 22.4514C23.0891 22.3134 23.1666 22.1263 23.1666 21.9312V10.0691C23.1666 9.87403 23.0891 9.68692 22.9511 9.54896C22.8132 9.411 22.6261 9.3335 22.431 9.3335V9.3335Z"
+                                                        fill="#707070" />
+                                                </svg>
+                                            </a>
+                                            <a class="about-author__social" href="#social">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32"
+                                                    viewBox="0 0 33 32" fill="none">
+                                                    <path
+                                                        d="M13.0333 10.9264C13.0333 11.3246 12.8999 11.7229 12.4999 12.1211C12.0999 12.5193 11.8333 12.5193 11.4333 12.5193C11.0333 12.5193 10.6333 12.3866 10.3666 12.1211C10.0999 11.8556 9.83325 11.3246 9.83325 10.9264C9.83325 10.5282 9.96659 10.13 10.3666 9.73173C10.7666 9.3335 11.0333 9.3335 11.4333 9.3335C11.8333 9.3335 12.2333 9.46624 12.6333 9.86447C13.0333 10.2627 13.0333 10.5282 13.0333 10.9264ZM13.0333 13.8468V22.2096C13.0333 22.3423 13.0333 22.3423 12.8999 22.4751C12.7666 22.6078 12.7666 22.6078 12.6333 22.6078H10.2333C10.0999 22.6078 10.0999 22.6078 9.96659 22.4751C9.83325 22.3423 9.96659 22.3423 9.96659 22.2096V13.8468C9.96659 13.714 9.96659 13.714 10.0999 13.5813C10.2333 13.4485 10.2333 13.4485 10.3666 13.4485H12.7666C12.8999 13.4485 12.8999 13.4485 13.0333 13.5813C13.1666 13.714 13.0333 13.714 13.0333 13.8468ZM19.8333 16.1034C19.6999 15.9707 19.2999 15.8379 18.8999 15.8379C18.3666 15.8379 17.9666 15.9707 17.6999 16.2362C17.4333 16.5016 17.2999 17.1654 17.2999 17.6963V22.2096C17.2999 22.3423 17.2999 22.3423 17.1666 22.4751C17.0333 22.6078 17.0333 22.6078 17.0333 22.6078H14.6333C14.4999 22.6078 14.4999 22.6078 14.3666 22.4751C14.2333 22.3423 14.2333 22.3423 14.2333 22.2096V13.8468C14.2333 13.714 14.2333 13.714 14.3666 13.5813C14.4999 13.4485 14.4999 13.4485 14.6333 13.4485H16.8999C17.0333 13.4485 17.0333 13.4485 17.1666 13.4485C17.2999 13.4485 17.2999 13.5813 17.2999 13.5813C17.2999 13.714 17.2999 13.714 17.2999 13.714C17.2999 13.714 17.2999 13.8468 17.2999 13.9795C17.8333 13.5813 18.6333 13.3158 19.6999 13.3158C20.7666 13.3158 21.6999 13.5813 22.2333 14.1123C22.7666 14.6432 23.1666 15.4397 23.1666 16.6344V22.3423C23.1666 22.4751 23.1666 22.4751 23.0333 22.6078C22.8999 22.7406 22.8999 22.6078 22.8999 22.6078H20.3666C20.2333 22.6078 20.2333 22.6078 20.0999 22.4751C19.9666 22.3423 20.0999 22.3423 20.0999 22.2096V17.1654C20.0999 16.6344 19.9666 16.3689 19.8333 16.1034Z"
+                                                        fill="#707070" />
+                                                </svg>
+                                            </a>
+                                            <a class="about-author__social" href="#social">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32"
+                                                    viewBox="0 0 33 32" fill="none">
+                                                    <path
+                                                        d="M21.8333 12.963C21.8333 13.1111 21.8333 13.2593 21.8333 13.4074C21.8333 14.4444 21.5666 15.4815 21.2999 16.3704C21.0333 17.2593 20.4999 18.2963 19.8333 19.1852C19.1666 20.0741 18.3666 20.6667 17.2999 21.2593C16.2333 21.8519 15.1666 22 13.9666 22C12.4999 22 11.1666 21.5556 9.83325 20.6667C10.0999 20.6667 10.2333 20.6667 10.4999 20.6667C11.8333 20.6667 12.8999 20.2222 13.9666 19.3333C13.2999 19.3333 12.7666 19.037 12.3666 18.7407C11.9666 18.4444 11.5666 17.8519 11.4333 17.2593C11.5666 17.2593 11.6999 17.2593 11.9666 17.2593C12.2333 17.2593 12.4999 17.2593 12.6333 17.1111C11.9666 17.1111 11.4333 16.6667 11.0333 16.2222C10.6333 15.7778 10.3666 15.037 10.3666 14.2963C10.7666 14.4444 11.1666 14.5926 11.5666 14.5926C10.7666 14 10.3666 13.1111 10.3666 12.0741C10.3666 11.4815 10.4999 11.037 10.7666 10.5926C11.4333 11.4815 12.2333 12.2222 13.2999 12.8148C14.3666 13.4074 15.2999 13.7037 16.4999 13.7037C16.4999 13.4074 16.4999 13.2593 16.4999 12.963C16.4999 12.0741 16.7666 11.4815 17.2999 10.8889C17.8333 10.2963 18.3666 10 19.0333 10C19.8333 10 20.4999 10.2963 21.0333 10.8889C21.6999 10.7407 22.2333 10.4444 22.7666 10.1481C22.6333 10.8889 22.2333 11.4815 21.5666 11.9259C22.0999 11.7778 22.6333 11.6296 23.1666 11.4815C22.7666 12.0741 22.3666 12.5185 21.8333 12.963Z"
+                                                        fill="#707070" />
+                                                </svg>
+                                            </a>
+                                            <a class="about-author__social" href="#social">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32"
+                                                    viewBox="0 0 33 32" fill="none">
+                                                    <path
+                                                        d="M23.5251 12.3353C23.3584 11.6816 22.8584 11.1654 22.2251 10.9848C21.0834 10.6665 16.5001 10.6665 16.5001 10.6665C16.5001 10.6665 11.9167 10.6665 10.7667 10.9848C10.1334 11.1568 9.64175 11.673 9.46675 12.3353C9.16675 13.5224 9.16675 15.9998 9.16675 15.9998C9.16675 15.9998 9.16675 18.4773 9.47508 19.6644C9.64175 20.3181 10.1417 20.8342 10.7751 21.0149C11.9167 21.3332 16.5001 21.3332 16.5001 21.3332C16.5001 21.3332 21.0834 21.3332 22.2334 21.0149C22.8667 20.8428 23.3584 20.3267 23.5334 19.6644C23.8334 18.4773 23.8334 15.9998 23.8334 15.9998C23.8334 15.9998 23.8334 13.5224 23.5251 12.3353ZM15.0001 18.2536V13.7461L18.8334 15.9998L15.0001 18.2536Z"
+                                                        fill="#707070" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="about-author__bio">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Feugiat et feugiat auctor mauris nisi, pellentesque sagittis. Lorem ipsum
+                                        dolor sit amet, consectetur adipiscing elit. Feugiat et feugiat auctor mauris
+                                        nisi.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="right-rail">
+                    <section class="author" desktop>
+                        <div class="author__wrapper">
+                            <div class="author-info">
+                                <div class="author__img" role="img"></div>
+                                <div class="author__text">
+                                    <div class="author__name">Mohammad Shehadeh</div>
+                                    <div class="author__title">Team Lead</div>
+                                </div>
+                            </div>
+                            <div class="article__details">
+                                <div class="article__detail article__detail--publish-date">
+                                    <svg class="article__detail-icon" xmlns="http://www.w3.org/2000/svg" width="14"
+                                        height="16" viewBox="0 0 14 16" fill="#FFFFFF">
+                                        <path
+                                            d="M12.3333 2.00002H11.6666V0.666687H10.3333V2.00002H3.66659V0.666687H2.33325V2.00002H1.66659C0.933252 2.00002 0.333252 2.60002 0.333252 3.33335V14C0.333252 14.7334 0.933252 15.3334 1.66659 15.3334H12.3333C13.0666 15.3334 13.6666 14.7334 13.6666 14V3.33335C13.6666 2.60002 13.0666 2.00002 12.3333 2.00002ZM12.3333 14H1.66659V5.33335H12.3333V14Z"
+                                            fill="white" />
+                                    </svg>
+                                    Aug. 11, 2202, 9:00 AM
+                                </div>
+                                <div class="article__detail article__detail--shares">
+                                    <svg class="article__detail-icon" xmlns="http://www.w3.org/2000/svg" width="12"
+                                        height="12" viewBox="0 0 12 12" fill="#FFFFFF">
+                                        <path
+                                            d="M9.55564 8.48795C9.10527 8.48795 8.69934 8.66566 8.39119 8.95181L4.16897 6.4488C4.20156 6.31325 4.2223 6.17169 4.2223 6.02711C4.2223 5.88253 4.20156 5.74096 4.16897 5.60542L8.34675 3.12651C8.66378 3.42771 9.08749 3.61446 9.55564 3.61446C10.5364 3.61446 11.3334 2.80422 11.3334 1.80723C11.3334 0.810241 10.5364 2.87251e-09 9.55564 2.87251e-09C8.5749 2.87251e-09 7.77786 0.810241 7.77786 1.80723C7.77786 1.95181 7.7986 2.09337 7.83119 2.22892L3.65341 4.70783C3.33638 4.40663 2.91267 4.21988 2.44453 4.21988C1.46379 4.21988 0.666748 5.03012 0.666748 6.02711C0.666748 7.0241 1.46379 7.83434 2.44453 7.83434C2.91267 7.83434 3.33638 7.64759 3.65341 7.34639L7.87564 9.8494C7.84601 9.9759 7.82823 10.1084 7.82823 10.244C7.82823 11.2139 8.60156 12 9.55564 12C10.5097 12 11.283 11.2139 11.283 10.244C11.283 9.2741 10.5097 8.48795 9.55564 8.48795Z"
+                                            fill="white" />
+                                    </svg>
+                                    1K Shares
+                                </div>
+                                <div class="article__detail article__detail--views">
+                                    <svg class="article__detail-icon" xmlns="http://www.w3.org/2000/svg" width="12"
+                                        height="8" viewBox="0 0 12 8" fill="#FFFFFF">
+                                        <path
+                                            d="M6 0C3.27273 0 0.943636 1.65867 0 4C0.943636 6.34133 3.27273 8 6 8C8.73 8 11.0564 6.34133 12 4C11.0564 1.65867 8.73 0 6 0ZM6 6.66667C4.49455 6.66667 3.27273 5.472 3.27273 4C3.27273 2.528 4.49455 1.33333 6 1.33333C7.50545 1.33333 8.72727 2.528 8.72727 4C8.72727 5.472 7.50545 6.66667 6 6.66667ZM6 2.4C5.09727 2.4 4.36364 3.11733 4.36364 4C4.36364 4.88267 5.09727 5.6 6 5.6C6.90273 5.6 7.63636 4.88267 7.63636 4C7.63636 3.11733 6.90273 2.4 6 2.4Z"
+                                            fill="white" />
+                                    </svg>
+                                    5K Views
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="advertisement">
+                        <div class="tabs__wrapper">
+                            <p class="advertisement__label">ADVERTISEMENT</p>
+                            <div class="advertisement__block ratio300x250"></div>
+                        </div>
+                    </div>
+                    <div class="newsletter">
+                        <div class="newsletter__wrapper tabs__wrapper">
+                            <div class="newsletter__title">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="42" viewBox="0 0 48 42"
+                                    fill="none">
+                                    <path
+                                        d="M44.5659 9.62608L12.4787 1.02833C10.2727 0.437236 7.99148 1.73117 7.40934 3.90374L1.05873 27.6045C0.476594 29.7771 1.8052 32.0383 4.0112 32.6294L36.0984 41.2271C38.3044 41.8182 40.5856 40.5243 41.1678 38.3517L47.5184 14.6509C48.1005 12.4784 46.7719 10.2172 44.5659 9.62608ZM37.1569 37.277L5.06963 28.6792L10.3618 8.92859L23.7593 23.1028L42.449 17.5263L37.1569 37.277ZM24.8178 19.1527L11.4202 4.97846L43.5075 13.5762L24.8178 19.1527Z"
+                                        fill="#707070" />
+                                </svg>
+                                <p>Subscribe to our <strong>Newsletter</strong></p>
+                            </div>
+                            <div class="newsletter__description">No spam, notifications only about new products, update
+                            </div>
+                            <div class="newsletter__form">
+                                <div class="newsletter__form-control">
+                                    <input class="newsletter__input" name="email" placeholder="Enter your email here">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                                        fill="none">
+                                        <path
+                                            d="M16.6667 4.28711H3.33341C2.41258 4.28711 1.67508 5.03294 1.67508 5.95378L1.66675 15.9538C1.66675 16.8746 2.41258 17.6204 3.33341 17.6204H16.6667C17.5876 17.6204 18.3334 16.8746 18.3334 15.9538V5.95378C18.3334 5.03294 17.5876 4.28711 16.6667 4.28711ZM16.6667 7.62044L10.0001 11.7871L3.33341 7.62044V5.95378L10.0001 10.1204L16.6667 5.95378V7.62044Z"
+                                            fill="#707070" />
+                                    </svg>
+                                </div>
+                                <div class="newsletter__submit">submit</div>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="tabs">
+                        <div class="tabs__wrapper">
+                            <div class="tabs__panel">
+                                <div class="tabs__label tabs__label--active" data-tab>latest</div>
+                                <div class="tabs__label" data-tab>popular</div>
+                                <div class="tabs__label" data-tab>Trending</div>
+                            </div>
+                            <div class="tabs__gropus-container">
+                                <div class="tabs__groups tabs__groups--active" data-panel>
+                                    <div class="tab__group">
+                                        <img loading="lazy" class="tab__group__image" alt=""
+                                            src="./public/img/image 13.png">
+                                        <div class="tab__group__info">
+                                            <div class="tab__group__title">Could walking help lower cancer risk?</div>
+                                            <div class="tab__group__text">By <a href="#"
+                                                    class="tab__group__text-author">Iasonas Georgiadis</a> | 15 June
+                                                2019</div>
+                                        </div>
+                                    </div>
+                                    <div class="tab__group">
+                                        <img loading="lazy" class="tab__group__image" alt=""
+                                            src="./public/img/image 14.png">
+                                        <div class="tab__group__info">
+                                            <div class="tab__group__title">DNA recovered from Arctic lakes holds clues
+                                                for our future world</div>
+                                            <div class="tab__group__text">By <a href="#"
+                                                    class="tab__group__text-author">Iasonas Georgiadis</a> | 15 June
+                                                2019</div>
+                                        </div>
+                                    </div>
+                                    <div class="tab__group">
+                                        <img loading="lazy" class="tab__group__image" alt=""
+                                            src="./public/img/image 16.png">
+                                        <div class="tab__group__info">
+                                            <div class="tab__group__title">How a volcanic eruption helped create modern
+                                                Scotland</div>
+                                            <div class="tab__group__text">By <a href="#"
+                                                    class="tab__group__text-author">Iasonas Georgiadis</a> | 15 June
+                                                2019</div>
+                                        </div>
+                                    </div>
+                                    <div class="tab__group">
+                                        <img loading="lazy" class="tab__group__image" alt=""
+                                            src="./public/img/image 18.png">
+                                        <div class="tab__group__info">
+                                            <div class="tab__group__title">Archaeologists unearth graves of ancient
+                                                warrior women in Russia</div>
+                                            <div class="tab__group__text">By <a href="#"
+                                                    class="tab__group__text-author">Iasonas Georgiadis</a> | 15 June
+                                                2019</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__groups" data-panel>
+                                    <div class="tab__group">
+                                        <img loading="lazy" class="tab__group__image" alt=""
+                                            src="./public/img/image 13.png">
+                                        <div class="tab__group__info">
+                                            <div class="tab__group__title">Could walking help lower cancer risk?</div>
+                                            <div class="tab__group__text">By <a href="#"
+                                                    class="tab__group__text-author">Iasonas Georgiadis</a> | 15 June
+                                                2019</div>
+                                        </div>
+                                    </div>
+                                    <div class="tab__group">
+                                        <img loading="lazy" class="tab__group__image" alt=""
+                                            src="./public/img/image 14.png">
+                                        <div class="tab__group__info">
+                                            <div class="tab__group__title">DNA recovered from Arctic lakes holds clues
+                                                for our future world</div>
+                                            <div class="tab__group__text">By <a href="#"
+                                                    class="tab__group__text-author">Iasonas Georgiadis</a> | 15 June
+                                                2019</div>
+                                        </div>
+                                    </div>
+                                    <div class="tab__group">
+                                        <img loading="lazy" class="tab__group__image" alt=""
+                                            src="./public/img/image 16.png">
+                                        <div class="tab__group__info">
+                                            <div class="tab__group__title">How a volcanic eruption helped create modern
+                                                Scotland</div>
+                                            <div class="tab__group__text">By <a href="#"
+                                                    class="tab__group__text-author">Iasonas Georgiadis</a> | 15 June
+                                                2019</div>
+                                        </div>
+                                    </div>
+                                    <div class="tab__group">
+                                        <img loading="lazy" class="tab__group__image" alt=""
+                                            src="./public/img/image 18.png">
+                                        <div class="tab__group__info">
+                                            <div class="tab__group__title">Archaeologists unearth graves of ancient
+                                                warrior women in Russia</div>
+                                            <div class="tab__group__text">By <a href="#"
+                                                    class="tab__group__text-author">Iasonas Georgiadis</a> | 15 June
+                                                2019</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__groups" data-panel>
+                                    <div class="tab__group">
+                                        <img loading="lazy" class="tab__group__image" alt=""
+                                            src="./public/img/image 13.png">
+                                        <div class="tab__group__info">
+                                            <div class="tab__group__title">Could walking help lower cancer risk?</div>
+                                            <div class="tab__group__text">By <a href="#"
+                                                    class="tab__group__text-author">Iasonas Georgiadis</a> | 15 June
+                                                2019</div>
+                                        </div>
+                                    </div>
+                                    <div class="tab__group">
+                                        <img loading="lazy" class="tab__group__image" alt=""
+                                            src="./public/img/image 14.png">
+                                        <div class="tab__group__info">
+                                            <div class="tab__group__title">DNA recovered from Arctic lakes holds clues
+                                                for our future world</div>
+                                            <div class="tab__group__text">By <a href="#"
+                                                    class="tab__group__text-author">Iasonas Georgiadis</a> | 15 June
+                                                2019</div>
+                                        </div>
+                                    </div>
+                                    <div class="tab__group">
+                                        <img loading="lazy" class="tab__group__image" alt=""
+                                            src="./public/img/image 16.png">
+                                        <div class="tab__group__info">
+                                            <div class="tab__group__title">How a volcanic eruption helped create modern
+                                                Scotland</div>
+                                            <div class="tab__group__text">By <a href="#"
+                                                    class="tab__group__text-author">Iasonas Georgiadis</a> | 15 June
+                                                2019</div>
+                                        </div>
+                                    </div>
+                                    <div class="tab__group">
+                                        <img loading="lazy" class="tab__group__image" alt=""
+                                            src="./public/img/image 18.png">
+                                        <div class="tab__group__info">
+                                            <div class="tab__group__title">Archaeologists unearth graves of ancient
+                                                warrior women in Russia</div>
+                                            <div class="tab__group__text">By <a href="#"
+                                                    class="tab__group__text-author">Iasonas Georgiadis</a> | 15 June
+                                                2019</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="about" mobile>
+                        <div class="about__wrapper tabs__wrapper">
+                            <h2 class="about-title">About KFSH&RC</h2>
+                            <div class="about-text">In Geoscience Online Blog you can find anything about geology
+                                science. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat et feugiat
+                                auctor mauris nisi, pellentesque sagittis. In pulvinar quam ut varius ultrices id diam.
+                            </div>
+                        </div>
+                    </section>
+                    <section class="follow-us" desktop>
+                        <div class="follow-us__wrapper tabs__wrapper">
+                            <div class="follow-us-title about-title">follow us</div>
+                            <div class="follow-us-icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
+                                    fill="none">
+                                    <circle cx="24" cy="24" r="24" fill="#3B5998" />
+                                    <path
+                                        d="M32.8966 14H15.1034C14.8108 14 14.5301 14.1163 14.3232 14.3232C14.1163 14.5301 14 14.8108 14 15.1034V32.8966C14 33.1892 14.1163 33.4699 14.3232 33.6768C14.5301 33.8837 14.8108 34 15.1034 34H24.6897V26.2655H22.0862V23.2379H24.6897V21.0103C24.6897 18.4276 26.269 17.0207 28.5724 17.0207C29.3486 17.019 30.1244 17.0581 30.8966 17.1379V19.8379H29.3103C28.0552 19.8379 27.8103 20.431 27.8103 21.3069V23.2345H30.8103L30.4207 26.2621H27.7931V34H32.8966C33.1892 34 33.4699 33.8837 33.6768 33.6768C33.8837 33.4699 34 33.1892 34 32.8966V15.1034C34 14.8108 33.8837 14.5301 33.6768 14.3232C33.4699 14.1163 33.1892 14 32.8966 14V14Z"
+                                        fill="white" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
+                                    fill="none">
+                                    <circle cx="24" cy="24" r="24" fill="#1DA1F2" />
+                                    <path
+                                        d="M32 19.4444C32 19.6667 32 19.8889 32 20.1111C32 21.6667 31.6 23.2222 31.2 24.5556C30.8 25.8889 30 27.4444 29 28.7778C28 30.1111 26.8 31 25.2 31.8889C23.6 32.7778 22 33 20.2 33C18 33 16 32.3333 14 31C14.4 31 14.6 31 15 31C17 31 18.6 30.3333 20.2 29C19.2 29 18.4 28.5556 17.8 28.1111C17.2 27.6667 16.6 26.7778 16.4 25.8889C16.6 25.8889 16.8 25.8889 17.2 25.8889C17.6 25.8889 18 25.8889 18.2 25.6667C17.2 25.6667 16.4 25 15.8 24.3333C15.2 23.6667 14.8 22.5556 14.8 21.4444C15.4 21.6667 16 21.8889 16.6 21.8889C15.4 21 14.8 19.6667 14.8 18.1111C14.8 17.2222 15 16.5556 15.4 15.8889C16.4 17.2222 17.6 18.3333 19.2 19.2222C20.8 20.1111 22.2 20.5556 24 20.5556C24 20.1111 24 19.8889 24 19.4444C24 18.1111 24.4 17.2222 25.2 16.3333C26 15.4444 26.8 15 27.8 15C29 15 30 15.4444 30.8 16.3333C31.8 16.1111 32.6 15.6667 33.4 15.2222C33.2 16.3333 32.6 17.2222 31.6 17.8889C32.4 17.6667 33.2 17.4444 34 17.2222C33.4 18.1111 32.8 18.7778 32 19.4444Z"
+                                        fill="white" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
+                                    fill="none">
+                                    <circle cx="24" cy="24" r="24" fill="#EB3223" />
+                                    <path
+                                        d="M34.5375 18.5032C34.2875 17.5226 33.5375 16.7484 32.5875 16.4774C30.875 16 24 16 24 16C24 16 17.125 16 15.4 16.4774C14.45 16.7355 13.7125 17.5097 13.45 18.5032C13 20.2839 13 24 13 24C13 24 13 27.7161 13.4625 29.4968C13.7125 30.4774 14.4625 31.2516 15.4125 31.5226C17.125 32 24 32 24 32C24 32 30.875 32 32.6 31.5226C33.55 31.2645 34.2875 30.4903 34.55 29.4968C35 27.7161 35 24 35 24C35 24 35 20.2839 34.5375 18.5032ZM21.75 27.3806V20.6194L27.5 24L21.75 27.3806Z"
+                                        fill="white" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
+                                    fill="none">
+                                    <circle cx="24" cy="24" r="24" fill="#007BB5" />
+                                    <path
+                                        d="M18.8 16.3894C18.8 16.9867 18.6 17.5841 18 18.1814C17.4 18.7788 17 18.7788 16.4 18.7788C15.8 18.7788 15.2 18.5796 14.8 18.1814C14.4 17.7832 14 16.9867 14 16.3894C14 15.792 14.2 15.1947 14.8 14.5973C15.4 14 15.8 14 16.4 14C17 14 17.6 14.1991 18.2 14.7965C18.8 15.3938 18.8 15.792 18.8 16.3894ZM18.8 20.7699V33.3142C18.8 33.5133 18.8 33.5133 18.6 33.7124C18.4 33.9115 18.4 33.9115 18.2 33.9115H14.6C14.4 33.9115 14.4 33.9115 14.2 33.7124C14 33.5133 14.2 33.5133 14.2 33.3142V20.7699C14.2 20.5708 14.2 20.5708 14.4 20.3717C14.6 20.1726 14.6 20.1726 14.8 20.1726H18.4C18.6 20.1726 18.6 20.1726 18.8 20.3717C19 20.5708 18.8 20.5708 18.8 20.7699ZM29 24.1549C28.8 23.9558 28.2 23.7566 27.6 23.7566C26.8 23.7566 26.2 23.9558 25.8 24.354C25.4 24.7522 25.2 25.7478 25.2 26.5442V33.3142C25.2 33.5133 25.2 33.5133 25 33.7124C24.8 33.9115 24.8 33.9115 24.8 33.9115H21.2C21 33.9115 21 33.9115 20.8 33.7124C20.6 33.5133 20.6 33.5133 20.6 33.3142V20.7699C20.6 20.5708 20.6 20.5708 20.8 20.3717C21 20.1726 21 20.1726 21.2 20.1726H24.6C24.8 20.1726 24.8 20.1726 25 20.1726C25.2 20.1726 25.2 20.3717 25.2 20.3717C25.2 20.5708 25.2 20.5708 25.2 20.5708C25.2 20.5708 25.2 20.7699 25.2 20.969C26 20.3717 27.2 19.9735 28.8 19.9735C30.4 19.9735 31.8 20.3717 32.6 21.1681C33.4 21.9646 34 23.1593 34 24.9513V33.5133C34 33.7124 34 33.7124 33.8 33.9115C33.6 34.1106 33.6 33.9115 33.6 33.9115H29.8C29.6 33.9115 29.6 33.9115 29.4 33.7124C29.2 33.5133 29.4 33.5133 29.4 33.3142V25.7478C29.4 24.9513 29.2 24.5531 29 24.1549Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="tags">
+                        <div class="tabs__wrapper">
+                            <h2 class="tag-title">Tags</h2>
+                            <div class="tags__wrapper">
+                                <div class="tag-label">Health</div>
+                                <div class="tag-label">Life</div>
+                                <div class="tag-label">Women</div>
+                                <div class="tag-label">Men</div>
+                                <div class="tag-label">Family’s Health</div>
+                                <div class="tag-label">Nutrition</div>
+                                <div class="tag-label">Kids</div>
+                                <div class="tag-label">Diseases</div>
+                                <div class="tag-label">Habits</div>
+                                <div class="tag-label">Healty</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </article>
+        <section class="related-posts">
+            <div class="related-posts__wrapper">
+                <div class="related-posts__title">RELATED POSTS</div>
+                <div class="related-posts__grid">
+                    <div class="related-posts__item">
+                        <div class="related-posts__item-preview" data-label="Healthy Lifestyle">
+                            <img loading="lazy" class="related-posts__item-img" alt="" src="./public/img/image 13.png">
+                        </div>
+                        <div class="related-posts__item-content">
+                            <div class="related-posts__item-title">Smarter Food Choices 101 Tips For Busy Women</div>
+                            <div class="related-posts__item-text">By Ibrahim Rahhal | Posted: 15 June 2022 </div>
+                        </div>
+                    </div>
+                    <div class="related-posts__item">
+                        <div class="related-posts__item-preview" data-label="Healthy Lifestyle">
+                            <img loading="lazy" class="related-posts__item-img" alt="" src="./public/img/image 3.png">
+                        </div>
+                        <div class="related-posts__item-content">
+                            <div class="related-posts__item-title">Smarter Food Choices 101 Tips For Busy Women</div>
+                            <div class="related-posts__item-text">By Ibrahim Rahhal | Posted: 15 June 2022 </div>
+                        </div>
+                    </div>
+                    <div class="related-posts__item">
+                        <div class="related-posts__item-preview" data-label="Healthy Lifestyle">
+                            <img loading="lazy" class="related-posts__item-img" alt="" src="./public/img/image 38.png">
+                        </div>
+                        <div class="related-posts__item-content">
+                            <div class="related-posts__item-title">Smarter Food Choices 101 Tips For Busy Women</div>
+                            <div class="related-posts__item-text">By Ibrahim Rahhal | Posted: 15 June 2022 </div>
+                        </div>
+                    </div>
+                    <div class="related-posts__item">
+                        <div class="related-posts__item-preview" data-label="Healthy Lifestyle">
+                            <img loading="lazy" class="related-posts__item-img" alt="" src="./public/img/image 30.png">
+                        </div>
+                        <div class="related-posts__item-content">
+                            <div class="related-posts__item-title">Smarter Food Choices 101 Tips For Busy Women</div>
+                            <div class="related-posts__item-text">By Ibrahim Rahhal | Posted: 15 June 2022 </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__buttons" mobile>
+                    <div class="slider__button slider__button--prev disabled">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path
+                                d="M18.5264 23.668L20.3137 21.8841L14.5221 16.1038L20.3137 10.3236L18.5264 8.53968L10.9474 16.1038L18.5264 23.668Z"
+                                fill="white" />
                         </svg>
                     </div>
-					<div class="footer__links">
-						<a class="footer__link" href="#" aria-label="about">about</a>
-						<a class="footer__link" href="#" aria-label="announcements">announcements</a>
-						<a class="footer__link" href="#" aria-label="videos">videos</a>
-						<a class="footer__link" href="#" aria-label="news">news</a>
-						<a class="footer__link" href="#" aria-label="About">Contact Us</a>
-					</div>
-                    <p class="footer__copyright">
-                        Atypon © 2022 All Rights Reserved
-                    </p>
-				</div>
-			</footer>
-		</main>
-		<script src="./dist/js/script.js"></script>
-	</body>
+                    <div class="slider__dots"></div>
+                    <div class="slider__button slider__button--next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path
+                                d="M13.4736 8.53906L11.6863 10.3229L17.4779 16.1032L11.6863 21.8835L13.4736 23.6674L21.0526 16.1032L13.4736 8.53906Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__wrapper container">
+                <div class="footer__scroll-to-top" data-scroll-to-top>
+                    <svg class="footer__icon footer__icon--chevron" xmlns="http://www.w3.org/2000/svg" width="50"
+                        height="50" viewBox="0 0 50 50" fill="none">
+                        <path
+                            d="M25 16.6655L12.5 29.1655L15.4479 32.1134L25 22.5614L34.5521 32.1134L37.5 29.1655L25 16.6655Z"
+                            fill="#333333" />
+                    </svg>
+                </div>
+                <div class="footer__links">
+                    <a class="footer__link" href="#" aria-label="about">about</a>
+                    <a class="footer__link" href="#" aria-label="announcements">announcements</a>
+                    <a class="footer__link" href="#" aria-label="videos">videos</a>
+                    <a class="footer__link" href="#" aria-label="news">news</a>
+                    <a class="footer__link" href="#" aria-label="About">Contact Us</a>
+                </div>
+                <p class="footer__copyright">
+                    Atypon © 2022 All Rights Reserved
+                </p>
+            </div>
+        </footer>
+    </main>
+    <script src="./public/js/script.js"></script>
+</body>
+
 </html>
