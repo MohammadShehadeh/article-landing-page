@@ -5,9 +5,9 @@ const app = express();
 const path = require('path');
 
 // Init static route for style and script files
-app.use('/public/css', express.static(path.join(__dirname, '../dist/css/')));
-app.use('/public/js', express.static(path.resolve(__dirname, '../dist/js/')));
-app.use('/public/img', express.static(path.resolve(__dirname, '../dist/img/')));
+app.use('/public/css', express.static(path.join(__dirname, '../public/dist/css/')));
+app.use('/public/js', express.static(path.join(__dirname, '../public/dist/js/')));
+app.use('/public/img', express.static(path.join(__dirname, '../public/dist/img/')));
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'views/index.html'));
@@ -20,5 +20,5 @@ app.listen(process.env.LISTEN_PORT || LISTEN_PORT, () => {
 });
 
 module.exports = {
-	app,
+    app,
 };
