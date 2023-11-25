@@ -300,7 +300,7 @@
 		max-width: 1109px;
 		margin: 0 auto;
 		display: flex;
-		gap: 40px;
+		gap: 24px;
 	}
 
 	.article-body {
@@ -317,25 +317,8 @@
 	}
 
 	.left-rail {
-		max-width: 371px;
-		position: absolute;
-		transform: translateX(-100%);
-		width: 100%;
-		top: 12px;
 		z-index: 1;
-	}
-
-	.left-rail {
 		font-family: $font-montserrat;
-
-		.image-credit {
-			border-bottom: none;
-		}
-	}
-
-	.left-rail__wrapper {
-		display: flex;
-		gap: 16px;
 	}
 
 	.left-rail__shares {
@@ -359,7 +342,7 @@
 
 	.left-rail__social {
 		display: inline-block;
-		padding-right: 30px;
+		padding-left: 16px;
 	}
 
 	.left-rail__icons {
